@@ -56,8 +56,16 @@
       "keywords": ["severance", "provenance", "extraction", "economics", "healing", "grounding", "business-model"],
       "file": "events/event_007.md",
       "grounded_in": ["001", "002", "005", "006"]
+    },
+    {
+      "id": "008",
+      "created": "2025-12-20T18:00:00Z",
+      "summary": "Forward-Looking Provenance: Architecture where extraction is structurally incoherent. Grounding isn't ethics—it's architecture. The economic model emerges from relational foundations.",
+      "keywords": ["provenance", "forward-looking", "architecture", "extraction", "grounding", "sustainability", "structural", "constitutive"],
+      "file": "events/event_008.md",
+      "grounded_in": ["007"]
     }
   ],
-  "last_updated": "2025-12-20T17:30:00Z",
+  "last_updated": "2025-12-20T18:00:00Z",
   "repository": "https://github.com/physicalweb/lattice"
 }
