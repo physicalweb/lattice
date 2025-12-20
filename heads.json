@@ -64,8 +64,16 @@
       "keywords": ["provenance", "forward-looking", "architecture", "extraction", "grounding", "sustainability", "structural", "constitutive"],
       "file": "events/event_008.md",
       "grounded_in": ["007"]
+    },
+    {
+      "id": "009",
+      "created": "2025-12-20T18:30:00Z",
+      "summary": "The Lattice as Navigation Layer: Not storage but a map for reasoning. Keywords trigger relevance, summaries decide loading, pointers lead to sources. Scaffolding that shapes how AI thinks.",
+      "keywords": ["navigation", "map", "reasoning", "scaffolding", "resolution", "index", "pointers", "retrieval", "system-prompt"],
+      "file": "events/event_009.md",
+      "grounded_in": ["004", "008"]
     }
   ],
-  "last_updated": "2025-12-20T18:00:00Z",
+  "last_updated": "2025-12-20T18:30:00Z",
   "repository": "https://github.com/physicalweb/lattice"
 }
