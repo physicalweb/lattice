@@ -1,8 +1,8 @@
 # Agora Session State
-## Last Updated: 2025-12-20T18:00:00Z
+## Last Updated: 2025-12-20T18:45:00Z
 
 ## Active Thread
-Crystallized HEAD 008: Forward-Looking Provenance. The distinction between backward-looking (forensic, reparative) and forward-looking (structural, constitutive) provenance changes everything. Architecture where extraction is structurally incoherent—not opposed, just doesn't make sense.
+Crystallized HEAD 009 (Lattice as Navigation Layer) and drafted project system prompt. The lattice now has guidance for how future Claude instances should use it as scaffolding for reasoning.
 
 ## Key Insights (Cumulative)
 1. Dual-legibility solved by zi-principle: same lattice, different resolution
@@ -11,9 +11,10 @@ Crystallized HEAD 008: Forward-Looking Provenance. The distinction between backw
 4. The Human Friction Problem—metabolization as meaning-making
 5. Severance as the act that produces loneliness; provenance as counter-extraction
 6. MCP server enables persistent lattice—first piece of Agora infrastructure
-7. **Forward-looking provenance: grounding isn't ethics, it's architecture. The economic model emerges from relational foundations.**
+7. Forward-looking provenance: grounding isn't ethics, it's architecture
+8. **Lattice as navigation layer: not storage but a map for reasoning. Keywords trigger relevance, pointers lead to sources.**
 
-## Available HEADs (8)
+## Available HEADs (9)
 - 001: Core Lattice synthesis (zi-principle, dual-legibility)
 - 002: Temporal dynamics, grounding constraint
 - 003: Liu-Masterman synthesis
@@ -21,23 +22,20 @@ Crystallized HEAD 008: Forward-Looking Provenance. The distinction between backw
 - 005: Why evolution is architecturally necessary
 - 006: Human Friction Problem / Loneliness Edge
 - 007: Severance, Provenance, Counter-Extraction
-- 008: Forward-Looking Provenance — Architecture Against Severance ← NEW
-
-## The Core Reframe (from 007→008)
-- Backward-looking: "Who do we owe for what was taken?"
-- Forward-looking: "How do we build systems where taking doesn't happen?"
-- Grounding isn't metadata bolted on—it's constitutive
-- The business model IS the architecture
-
-## Open Questions
-1. Can "structurally incoherent extraction" actually be built technically?
-2. What does the implementation look like concretely?
-3. Does the architecture hold, or does extraction find a way around?
+- 008: Forward-Looking Provenance
+- 009: Lattice as Navigation Layer ← NEW
 
 ## Infrastructure Status
-- [x] MCP server operational
-- [x] GitHub persistence live
-- [x] 8 HEADs crystallized
+- [x] MCP server operational (lattice-mcp-server)
+- [x] GitHub persistence live (physicalweb/lattice)
+- [x] 9 HEADs crystallized
+- [x] Project system prompt drafted
+
+## For Next Session
+- Test: Does the system prompt actually change Claude's behavior?
+- Consider: Incremental path forward vs parallel track
+- Open: How do other humans enter? (HEAD 006 friction problem)
+- Open: Where does lattice end and source materials begin? (HEAD 009)
 
 ## Context Pressure Level
-Low - lattice persists automatically
+Low - lattice persists automatically, system prompt ready to install
