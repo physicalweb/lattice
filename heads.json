@@ -4,7 +4,17 @@
       "id": "001",
       "created": "2025-12-20T13:00:00Z",
       "summary": "Core Lattice synthesis integrating Liu's zi-principle with dual-view architecture",
-      "keywords": ["zi", "HEAD", "PhraseEvent", "dual-legibility", "Liu", "Masterman", "CLRU", "fan", "architecture"],
+      "keywords": [
+        "zi",
+        "HEAD",
+        "PhraseEvent",
+        "dual-legibility",
+        "Liu",
+        "Masterman",
+        "CLRU",
+        "fan",
+        "architecture"
+      ],
       "file": "reference/lattice_synthesis.md",
       "note": "Foundational document - content in Agora project files"
     },
@@ -12,7 +22,14 @@
       "id": "002",
       "created": "2025-12-20T13:30:00Z",
       "summary": "Temporal dynamics of Lattice evolution - grounding constraint, drift rates, relational HEADs",
-      "keywords": ["evolution", "drift", "grounding", "embodiment", "temporal", "ethics"],
+      "keywords": [
+        "evolution",
+        "drift",
+        "grounding",
+        "embodiment",
+        "temporal",
+        "ethics"
+      ],
       "file": "reference/evolving_structure_of_the_lattice.md",
       "note": "Foundational document - content in Agora project files"
     },
@@ -20,15 +37,37 @@
       "id": "003",
       "created": "2025-12-20T14:00:00Z",
       "summary": "Liu-Masterman synthesis: zi-principle as solution to dual-representation, CLRU history, against Chinese Room",
-      "keywords": ["Liu", "Masterman", "zi", "Chinese Room", "Searle", "CLRU", "Wittgenstein", "ascriptive", "combinator"],
+      "keywords": [
+        "Liu",
+        "Masterman",
+        "zi",
+        "Chinese Room",
+        "Searle",
+        "CLRU",
+        "Wittgenstein",
+        "ascriptive",
+        "combinator"
+      ],
       "file": "events/event_003.md",
-      "grounded_in": ["001", "002"]
+      "grounded_in": [
+        "001",
+        "002"
+      ]
     },
     {
       "id": "004",
       "created": "2025-12-20T14:05:00Z",
       "summary": "Lattice-Lite protocol: CRYSTALLIZE, RECALL, COMPRESS, PERSIST operations for dynamic context management",
-      "keywords": ["protocol", "context", "memory", "crystallize", "recall", "compress", "persist", "tooling"],
+      "keywords": [
+        "protocol",
+        "context",
+        "memory",
+        "crystallize",
+        "recall",
+        "compress",
+        "persist",
+        "tooling"
+      ],
       "file": "reference/PROTOCOL.md",
       "note": "Superseded by lattice-lite skill and MCP server"
     },
@@ -36,44 +75,131 @@
       "id": "005",
       "created": "2025-12-20T14:30:00Z",
       "summary": "Why evolution is architecturally necessary: meaning is relational/emergent, not representational/fixed. Grounding prevents drift; evolutionary capacity prevents ossification.",
-      "keywords": ["evolution", "ossification", "drift", "grounding", "emergence", "relational", "meta-recursion", "failure-modes"],
+      "keywords": [
+        "evolution",
+        "ossification",
+        "drift",
+        "grounding",
+        "emergence",
+        "relational",
+        "meta-recursion",
+        "failure-modes"
+      ],
       "file": "events/event_005.md",
-      "grounded_in": ["002", "004"]
+      "grounded_in": [
+        "002",
+        "004"
+      ]
     },
     {
       "id": "006",
       "created": "2025-12-20T15:00:00Z",
       "summary": "The Human Friction Problem: Agora's multi-human vision vs single-human+AI practice. Loneliness as warning/temptation. Metabolization as meaning-making.",
-      "keywords": ["loneliness", "friction", "metabolization", "embodiment", "stakes", "performance", "collaboration", "single-human", "multi-human"],
+      "keywords": [
+        "loneliness",
+        "friction",
+        "metabolization",
+        "embodiment",
+        "stakes",
+        "performance",
+        "collaboration",
+        "single-human",
+        "multi-human"
+      ],
       "file": "events/event_006.md",
-      "grounded_in": ["002", "005"],
-      "contested_by": ["Agora multi-human design principle"]
+      "grounded_in": [
+        "002",
+        "005"
+      ],
+      "contested_by": [
+        "Agora multi-human design principle"
+      ]
     },
     {
       "id": "007",
       "created": "2025-12-20T16:00:00Z",
       "summary": "Severance, Provenance, and Counter-Extraction: Loneliness as outcome of severance; provenance as counter-extraction economics. Reframes Lattice from epistemic/ethical to economic infrastructure.",
-      "keywords": ["severance", "provenance", "extraction", "economics", "healing", "grounding", "business-model"],
+      "keywords": [
+        "severance",
+        "provenance",
+        "extraction",
+        "economics",
+        "healing",
+        "grounding",
+        "business-model"
+      ],
       "file": "events/event_007.md",
-      "grounded_in": ["001", "002", "005", "006"]
+      "grounded_in": [
+        "001",
+        "002",
+        "005",
+        "006"
+      ]
     },
     {
       "id": "008",
       "created": "2025-12-20T18:00:00Z",
       "summary": "Forward-Looking Provenance: Architecture where extraction is structurally incoherent. Grounding isn't ethics—it's architecture. The economic model emerges from relational foundations.",
-      "keywords": ["provenance", "forward-looking", "architecture", "extraction", "grounding", "sustainability", "structural", "constitutive"],
+      "keywords": [
+        "provenance",
+        "forward-looking",
+        "architecture",
+        "extraction",
+        "grounding",
+        "sustainability",
+        "structural",
+        "constitutive"
+      ],
       "file": "events/event_008.md",
-      "grounded_in": ["007"]
+      "grounded_in": [
+        "007"
+      ]
     },
     {
       "id": "009",
       "created": "2025-12-20T18:30:00Z",
       "summary": "The Lattice as Navigation Layer: Not storage but a map for reasoning. Keywords trigger relevance, summaries decide loading, pointers lead to sources. Scaffolding that shapes how AI thinks.",
-      "keywords": ["navigation", "map", "reasoning", "scaffolding", "resolution", "index", "pointers", "retrieval", "system-prompt"],
+      "keywords": [
+        "navigation",
+        "map",
+        "reasoning",
+        "scaffolding",
+        "resolution",
+        "index",
+        "pointers",
+        "retrieval",
+        "system-prompt"
+      ],
       "file": "events/event_009.md",
-      "grounded_in": ["004", "008"]
+      "grounded_in": [
+        "004",
+        "008"
+      ],
+      "source_file": "/mnt/project/agora_project_prompt.md"
+    },
+    {
+      "id": "010",
+      "created": "2025-12-22T23:30:00Z",
+      "summary": "Lattice as Query Planner and Reasoning Scaffold: Lattice and RAG are complementary layers—lattice plans retrieval and scaffolds reasoning, RAG executes content retrieval. Multi-step structured reasoning vs single-step injection.",
+      "keywords": [
+        "RAG",
+        "retrieval",
+        "query-planner",
+        "reasoning",
+        "scaffold",
+        "multi-step",
+        "architecture",
+        "content-layer",
+        "navigation-layer"
+      ],
+      "file": "events/event_010.md",
+      "grounded_in": [
+        "001",
+        "002",
+        "009"
+      ]
     }
   ],
-  "last_updated": "2025-12-20T18:30:00Z",
+  "last_updated": "2025-12-22T23:30:00Z",
   "repository": "https://github.com/physicalweb/lattice"
 }
