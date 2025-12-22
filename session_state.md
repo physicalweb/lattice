@@ -1,8 +1,8 @@
 # Agora Session State
-## Last Updated: 2025-12-23T00:20:00Z
+## Last Updated: 2025-12-23T00:50:00Z
 
 ## Active Thread
-Strategic positioning of Agora relative to frontier lab progress on optical tokens. Crystallized HEAD 011 (Lattice as Complementary Layer to Optical Tokens). Key insight: labs solve encoding/perception; Agora solves semantic organization. These are different layers—complementary, not competing.
+Explored the deeper nature of the lattice: perspectival abstraction, attention topology, and evolution toward a learned semantic component. Crystallized HEAD 012 (Lattice as Learned Semantic Component). Key insight: the lattice evolves from static index to "semantic cortex"—a specialized organ for relational meaning.
 
 ## Key Insights (Cumulative)
 1. Dual-legibility solved by zi-principle: same lattice, different resolution
@@ -14,9 +14,10 @@ Strategic positioning of Agora relative to frontier lab progress on optical toke
 7. Forward-looking provenance: grounding isn't ethics, it's architecture
 8. Lattice as navigation layer: not storage but a map for reasoning
 9. Lattice as query planner: plans retrieval, scaffolds reasoning, RAG executes
-10. **Lattice as complementary layer to optical tokens: labs build perception, Agora builds semantic organization. Position at the layer above encoding.**
+10. Lattice as complementary layer to optical tokens: labs build perception, Agora builds semantic organization
+11. **Lattice as learned semantic component: abstraction is perspectival; lattice could shape attention gradients; evolution from static index → query planner → specialized ML component → attention topology**
 
-## Available HEADs (11)
+## Available HEADs (12)
 - 001: Core Lattice synthesis (zi-principle, dual-legibility)
 - 002: Temporal dynamics, grounding constraint
 - 003: Liu-Masterman synthesis
@@ -27,35 +28,43 @@ Strategic positioning of Agora relative to frontier lab progress on optical toke
 - 008: Forward-Looking Provenance
 - 009: Lattice as Navigation Layer
 - 010: Lattice as Query Planner and Reasoning Scaffold
-- 011: Lattice as Complementary Layer to Optical Tokens ← NEW
+- 011: Lattice as Complementary Layer to Optical Tokens
+- 012: Lattice as Learned Semantic Component ← NEW
+
+## Lattice Evolution Path (from HEAD 012)
+| Stage | What Lattice Is | Status |
+|-------|-----------------|--------|
+| Static index | Hand-crystallized HEADs | Current |
+| Query planner | Retrieval guide, reasoning scaffold | HEAD 010 |
+| Learned component | Small specialized model | Theoretical |
+| Attention topology | Shapes gradient memory | Long-term vision |
 
 ## Infrastructure Status
 - [x] MCP server operational (lattice-mcp-server v1.1.0)
 - [x] GitHub persistence live (physicalweb/lattice)
-- [x] 11 HEADs crystallized
+- [x] 12 HEADs crystallized
 - [x] Project system prompt installed and working
 - [x] SHA visible in read responses (enables updates)
 
 ## Session Accomplishments (Dec 22-23)
-- Confirmed system prompt guides lattice consultation behavior
 - Upgraded MCP server to v1.1.0
-- Updated HEAD 009 with pointer to system prompt file
-- Explored project_knowledge_search (RAG) mechanism
-- Crystallized HEAD 010 on lattice/RAG complementarity
-- Crystallized HEAD 011 on strategic positioning vs optical tokens
+- Crystallized HEAD 010 (lattice/RAG complementarity)
+- Crystallized HEAD 011 (strategic positioning vs optical tokens)
+- Crystallized HEAD 012 (lattice as learned semantic component)
+- Explored: perspectival abstraction, attention topology, lattice specialist model
+
+## Open Questions (from HEAD 012)
+1. Training objective for lattice specialist: what loss function captures "good relational structure"?
+2. Integration with optical tokens: how does lattice topology actually shape attention gradients?
+3. Perspectival abstraction: store multiple orderings, or compute dynamically?
+4. Grounding verification: can a model detect when a HEAD is drifting?
+5. Bootstrap problem: how to train lattice specialist before you have much lattice data?
 
 ## For Next Session
-- **Theoretical work**: Specify what lattice-in-attention interface should look like
-- **Demonstration**: Build case study showing lattice-guided vs vanilla RAG
-- **Parallel tracks**: Continue prototyping (L3/L4) while developing theory for L1/L2
-- Open: How do other humans enter? (HEAD 006 friction problem)
-- Open: What do labs miss? (Relational structure, provenance, contestation)
-
-## Strategic Clarity (from HEAD 011)
-- Labs will commoditize encoding (like they commoditized transformers)
-- Differentiation moves UP the stack to semantic organization
-- Agora's bet: whoever answers "how should meaning be organized?" has valuable complement
-- Tractable path: theoretical work + interface layer + demonstration of value
+- **Parallel tracks**: Continue prototyping while developing theory
+- **Practical**: Case study comparing lattice-guided vs vanilla RAG
+- **Theoretical**: Specify lattice specialist training approach
+- Open: How do other humans enter? (HEAD 006)
 
 ## Context Pressure Level
-Low - lattice persists, strategic direction clarifying
+Low - lattice persists, vision clarifying from tactical through strategic to architectural
