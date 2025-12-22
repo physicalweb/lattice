@@ -17,7 +17,9 @@
       ],
       "file": "reference/lattice_synthesis.md",
       "note": "Foundational document - content in Agora project files",
-      "extended_by": ["012"]
+      "extended_by": [
+        "012"
+      ]
     },
     {
       "id": "002",
@@ -33,7 +35,10 @@
       ],
       "file": "reference/evolving_structure_of_the_lattice.md",
       "note": "Foundational document - content in Agora project files",
-      "extended_by": ["005", "013"]
+      "extended_by": [
+        "005",
+        "013"
+      ]
     },
     {
       "id": "003",
@@ -72,7 +77,9 @@
       ],
       "file": "reference/PROTOCOL.md",
       "note": "Superseded by lattice-lite skill and MCP server",
-      "extended_by": ["009"]
+      "extended_by": [
+        "009"
+      ]
     },
     {
       "id": "005",
@@ -93,7 +100,9 @@
         "002",
         "004"
       ],
-      "extended_by": ["013"]
+      "extended_by": [
+        "013"
+      ]
     },
     {
       "id": "006",
@@ -139,7 +148,9 @@
         "005",
         "006"
       ],
-      "extended_by": ["013"]
+      "extended_by": [
+        "013"
+      ]
     },
     {
       "id": "008",
@@ -181,7 +192,9 @@
         "008"
       ],
       "source_file": "/mnt/project/agora_project_prompt.md",
-      "extended_by": ["010"]
+      "extended_by": [
+        "010"
+      ]
     },
     {
       "id": "010",
@@ -204,7 +217,11 @@
         "002",
         "009"
       ],
-      "extended_by": ["011", "012"]
+      "extended_by": [
+        "011",
+        "012",
+        "014"
+      ]
     },
     {
       "id": "011",
@@ -229,7 +246,10 @@
         "003",
         "010"
       ],
-      "extended_by": ["012"]
+      "extended_by": [
+        "012",
+        "014"
+      ]
     },
     {
       "id": "012",
@@ -253,6 +273,9 @@
         "002",
         "010",
         "011"
+      ],
+      "extended_by": [
+        "014"
       ]
     },
     {
@@ -278,8 +301,33 @@
         "005",
         "007"
       ]
+    },
+    {
+      "id": "014",
+      "created": "2025-12-23T02:00:00Z",
+      "summary": "Lattice-Enabled RAG System Design: Survey of RAG state-of-the-art (GraphRAG, RAPTOR, Contextual Retrieval, Agentic RAG). Core insight: lattice already IS the semantic structure these methods try to build automatically—with provenance and contestation as bonuses. Four-phase implementation plan.",
+      "keywords": [
+        "RAG",
+        "GraphRAG",
+        "RAPTOR",
+        "contextual-retrieval",
+        "hybrid-search",
+        "reranking",
+        "implementation",
+        "Chroma",
+        "embeddings",
+        "BM25",
+        "evaluation",
+        "design"
+      ],
+      "file": "events/event_014.md",
+      "grounded_in": [
+        "010",
+        "011",
+        "012"
+      ]
     }
   ],
-  "last_updated": "2025-12-23T01:15:00Z",
+  "last_updated": "2025-12-23T02:00:00Z",
   "repository": "https://github.com/physicalweb/lattice"
 }
