@@ -1,8 +1,8 @@
 # Agora Session State
-## Last Updated: 2025-12-20T18:45:00Z
+## Last Updated: 2025-12-22T23:45:00Z
 
 ## Active Thread
-Crystallized HEAD 009 (Lattice as Navigation Layer) and drafted project system prompt. The lattice now has guidance for how future Claude instances should use it as scaffolding for reasoning.
+Explored the boundary between lattice and RAG mechanisms. Crystallized HEAD 010 (Lattice as Query Planner and Reasoning Scaffold). Key insight: lattice and RAG are complementary layers—lattice plans, RAG executes.
 
 ## Key Insights (Cumulative)
 1. Dual-legibility solved by zi-principle: same lattice, different resolution
@@ -12,9 +12,10 @@ Crystallized HEAD 009 (Lattice as Navigation Layer) and drafted project system p
 5. Severance as the act that produces loneliness; provenance as counter-extraction
 6. MCP server enables persistent lattice—first piece of Agora infrastructure
 7. Forward-looking provenance: grounding isn't ethics, it's architecture
-8. **Lattice as navigation layer: not storage but a map for reasoning. Keywords trigger relevance, pointers lead to sources.**
+8. Lattice as navigation layer: not storage but a map for reasoning
+9. **Lattice as query planner: lattice plans retrieval and scaffolds reasoning, RAG executes content retrieval. Multi-step structured reasoning vs single-step injection.**
 
-## Available HEADs (9)
+## Available HEADs (10)
 - 001: Core Lattice synthesis (zi-principle, dual-legibility)
 - 002: Temporal dynamics, grounding constraint
 - 003: Liu-Masterman synthesis
@@ -23,19 +24,29 @@ Crystallized HEAD 009 (Lattice as Navigation Layer) and drafted project system p
 - 006: Human Friction Problem / Loneliness Edge
 - 007: Severance, Provenance, Counter-Extraction
 - 008: Forward-Looking Provenance
-- 009: Lattice as Navigation Layer ← NEW
+- 009: Lattice as Navigation Layer (updated: now points to system prompt file)
+- 010: Lattice as Query Planner and Reasoning Scaffold ← NEW
 
 ## Infrastructure Status
-- [x] MCP server operational (lattice-mcp-server)
+- [x] MCP server operational (lattice-mcp-server v1.1.0)
 - [x] GitHub persistence live (physicalweb/lattice)
-- [x] 9 HEADs crystallized
-- [x] Project system prompt drafted
+- [x] 10 HEADs crystallized
+- [x] Project system prompt installed and working
+- [x] MCP server now returns SHA in text output (enables updates)
+- [x] HEAD 009 points to system prompt file for joint introspection
+
+## Session Accomplishments (Dec 22)
+- Confirmed system prompt guides lattice consultation behavior
+- Upgraded MCP server to v1.1.0 (SHA visible in read responses)
+- Updated HEAD 009 with pointer to /mnt/project/agora_project_prompt.md
+- Explored project_knowledge_search (RAG) mechanism
+- Crystallized HEAD 010 on lattice/RAG complementarity
 
 ## For Next Session
-- Test: Does the system prompt actually change Claude's behavior?
-- Consider: Incremental path forward vs parallel track
+- Consider: How does lattice structure enter the attention mechanism? (Agora ideographic encoder vision)
 - Open: How do other humans enter? (HEAD 006 friction problem)
-- Open: Where does lattice end and source materials begin? (HEAD 009)
+- Practical: Should HEADs be duplicated in project files for RAG access, or kept only in GitHub lattice?
+- Design: Edge types for retrieval hints (":FOR_GROUNDING_SEE" or similar?)
 
 ## Context Pressure Level
-Low - lattice persists automatically, system prompt ready to install
+Low - lattice persists, infrastructure solid, theoretical foundation strengthening
