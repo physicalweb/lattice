@@ -18,7 +18,8 @@
       "file": "reference/lattice_synthesis.md",
       "note": "Foundational document - content in Agora project files",
       "extended_by": [
-        "012"
+        "012",
+        "015"
       ]
     },
     {
@@ -37,7 +38,8 @@
       "note": "Foundational document - content in Agora project files",
       "extended_by": [
         "005",
-        "013"
+        "013",
+        "015"
       ]
     },
     {
@@ -193,7 +195,8 @@
       ],
       "source_file": "/mnt/project/agora_project_prompt.md",
       "extended_by": [
-        "010"
+        "010",
+        "015"
       ]
     },
     {
@@ -220,7 +223,8 @@
       "extended_by": [
         "011",
         "012",
-        "014"
+        "014",
+        "015"
       ]
     },
     {
@@ -325,9 +329,41 @@
         "010",
         "011",
         "012"
+      ],
+      "reframed_by": [
+        "015"
+      ]
+    },
+    {
+      "id": "015",
+      "created": "2025-12-23T03:00:00Z",
+      "summary": "Retrieval as Grounding: HEADs navigate, sources ground. Operating on abstractions alone produces 'ghosts floating free.' Two-phase retrieval: navigate at HEAD level, ground at source level. Understanding is use-in-context, not fact retrieval. Epistemological reframe of HEAD 014.",
+      "keywords": [
+        "grounding",
+        "retrieval",
+        "navigation",
+        "understanding",
+        "use-in-context",
+        "ghost",
+        "fan-structure",
+        "apex-down",
+        "base-up",
+        "two-phase",
+        "embodiment",
+        "life-situations"
+      ],
+      "file": "events/event_015.md",
+      "grounded_in": [
+        "001",
+        "002",
+        "009",
+        "010"
+      ],
+      "reframes": [
+        "014"
       ]
     }
   ],
-  "last_updated": "2025-12-23T02:00:00Z",
+  "last_updated": "2025-12-23T03:00:00Z",
   "repository": "https://github.com/physicalweb/lattice"
 }
