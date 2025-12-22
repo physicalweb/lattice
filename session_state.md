@@ -1,44 +1,44 @@
 # Agora Session State
-## Last Updated: 2025-12-23T02:45:00Z
+## Last Updated: 2025-12-23T04:00:00Z
 
-## Active Thread
-After crystallizing HEAD 014 (RAG design), pivoted to deeper questions: **Should we build classic RAG at all?** Two key insights emerged:
+---
 
-### Insight 1: Flat Chunking is Severance
-When we chunk Liu's book and embed it, we sever it from its relational structure. Liu isn't presenting facts—she's making *moves*: contesting Searle, recovering Masterman, reframing Shannon through Wittgenstein. Flat chunking loses the argumentative structure. We can retrieve *what Liu said* but not *the move Liu was making*.
+## Active Thread: Grounding-Based Retrieval and Infrastructure
 
-Academic discourse is inherently relational:
-- **Contests**: argues against a position
-- **Extends**: builds on prior work  
-- **Recovers**: brings back forgotten threads
-- **Reframes**: applies new lens to old material
+### What Happened This Session
 
-The lattice captures this for our crystallizations. But ingested content doesn't get this treatment—yet.
+1. **Caught drift from previous session** — Operating on HEAD abstractions without grounding
+2. **Did lattice-based reasoning properly** — Followed `:grounded_in` links to source documents
+3. **Crystallized HEAD 015: Retrieval as Grounding** — HEADs navigate, sources ground; "ghosts floating free"
+4. **Updated project prompt to v2** — Incorporates two-phase pattern, ghost detection, session state protocol
+5. **Fixed workflow for session state updates** — Must read first to get SHA, then write
 
-### Insight 2: Classic RAG Benchmarks Won't Work
-If we measure with classic metrics (retrieval precision, answer accuracy, faithfulness), we optimize for flat retrieval—and miss what makes the lattice valuable.
+### HEAD 015 Core Insight
 
-**What relational intelligence would measure**:
-- Provenance tracing: Can system reconstruct a claim's lineage?
-- Contestation awareness: Does it surface debates, not flatten to consensus?
-- Discourse move recognition: Classify rhetorical function, not just content
-- Relational coherence: Do answers preserve argument structure?
-- Grounding quality: Trace abstract claims to concrete examples
-- Connection discovery: Find relationships that emerge from structure
+> **HEADs are for navigation, not reasoning. Grounding is where understanding happens.**
 
-**Possible query types for relational benchmark**:
-1. Lineage queries: "What is X's intellectual heritage?"
-2. Contestation queries: "What does X argue against Y about Z?"
-3. Move queries: "What is X doing when they say Y?"
-4. Connection queries: "How does A relate to B through C?"
-5. Grounding queries: "What examples support abstract claim X?"
+Two-phase pattern: Navigate (HEAD level) → Ground (source level) → Synthesize
 
-### The Meta-Question
-Maybe we shouldn't build "RAG + lattice" at all. Maybe we should build a **Discourse Navigation System**:
-- Content ingested with relational structure
-- Queries interpreted as discourse questions
-- Responses preserve argumentative structure
-- System thinks in terms of moves, positions, lineages
+### Key Quotes Retrieved from Sources
+
+From `lattice_synthesis.md`:
+> "HEAD is not a definition—it's a convergence point where multiple uses cluster."
+> "Understanding is not a mental state. Understanding is use in context."
+
+From `evolving_structure_of_the_lattice.md`:
+> "A HEAD that loses all grounding in human embodied experience isn't a HEAD anymore—it's a ghost floating free of the lattice."
+
+---
+
+## Project Prompt v2 Changes
+- Added "Navigate, Then Ground" as core principle
+- Added two-phase pattern (Navigate → Ground → Synthesize)
+- Added ghost detection section
+- Added retrieval paths (apex-down vs base-up)
+- Removed static HEAD list (consult live lattice instead)
+- Added session state protocol with triggers
+
+---
 
 ## Key Insights (Cumulative)
 1. Dual-legibility solved by zi-principle: same lattice, different resolution
@@ -54,45 +54,30 @@ Maybe we shouldn't build "RAG + lattice" at all. Maybe we should build a **Disco
 11. Lattice as learned semantic component: abstraction is perspectival
 12. Lattice temporality: content frozen, structure evolves
 13. RAG landscape: GraphRAG, RAPTOR try to build what lattice already has
-14. **Flat chunking performs severance on relational content**
-15. **Classic RAG benchmarks measure retrieval, not relational intelligence**
+14. Flat chunking performs severance on relational content
+15. **HEADs navigate, sources ground — retrieval as grounding (HEAD 015)**
 
-## Available HEADs (14)
-- 001: Core Lattice synthesis ← extended_by: [012]
-- 002: Temporal dynamics, grounding constraint ← extended_by: [005, 013]
-- 003: Liu-Masterman synthesis
-- 004: Lattice-Lite protocol ← extended_by: [009]
-- 005: Why evolution is architecturally necessary ← extended_by: [013]
-- 006: Human Friction Problem / Loneliness Edge
-- 007: Severance, Provenance, Counter-Extraction ← extended_by: [013]
-- 008: Forward-Looking Provenance
-- 009: Lattice as Navigation Layer ← extended_by: [010]
-- 010: Lattice as Query Planner ← extended_by: [011, 012, 014]
-- 011: Complementary to Optical Tokens ← extended_by: [012, 014]
-- 012: Learned Semantic Component ← extended_by: [014]
-- 013: Lattice Temporality
-- 014: Lattice-Enabled RAG System Design
+---
 
-## Open Design Questions
-1. **What to build?** Classic RAG isn't exciting. What's the minimal test of relational value?
-2. **Relational ingestion**: How to preserve discourse structure when ingesting content?
-3. **Benchmarking**: How to measure discourse fidelity, contestation awareness, lineage tracing?
-4. **Levels of integration**: Chunk tagging (light) vs relational extraction (medium) vs lattice digestion (deep)?
+## Lattice State
+- **15 HEADs crystallized** (001-015)
+- **New edge type**: `:reframes` (015 reframes 014)
+- HEAD 015 grounded in 001, 002, 009, 010
 
-## Infrastructure Status
-- [x] MCP server operational (lattice-mcp-server v1.1.0)
-- [x] GitHub persistence live
-- [x] 14 HEADs crystallized
-- [x] Forward edges implemented
-- [ ] Relational ingestion design
-- [ ] Relational benchmark design
-- [ ] Implementation (TBD what to build)
+## Open Questions
+- Technical implementation of two-phase retrieval?
+- How to do Level 2 ingestion (chunk + tag + link)?
+- Ghost detection as system feature?
 
 ## For Next Session
-- Decide: Build classic RAG as baseline, or skip to relational approach?
-- Consider: HEAD 015 on relational intelligence benchmarking?
-- Consider: Prototype focused on one relational capability (e.g., contestation surfacing)?
-- Test case: Use Liu text for relational ingestion experiment?
+- Choose: Technical spike, ingestion experiment, ghost detection, or more theory
+- Continue grounding work—follow links, read sources
 
-## Context Pressure Level
-HIGH - compaction likely imminent. Key insights captured above.
+## Infrastructure Status
+- [x] MCP server operational (v1.1.0)
+- [x] GitHub persistence live
+- [x] 15 HEADs crystallized
+- [x] Forward edges implemented
+- [x] Project prompt v2 with session state protocol
+- [ ] Relational ingestion design
+- [ ] Two-phase retrieval implementation
