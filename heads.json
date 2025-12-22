@@ -16,7 +16,8 @@
         "architecture"
       ],
       "file": "reference/lattice_synthesis.md",
-      "note": "Foundational document - content in Agora project files"
+      "note": "Foundational document - content in Agora project files",
+      "extended_by": ["012"]
     },
     {
       "id": "002",
@@ -31,7 +32,8 @@
         "ethics"
       ],
       "file": "reference/evolving_structure_of_the_lattice.md",
-      "note": "Foundational document - content in Agora project files"
+      "note": "Foundational document - content in Agora project files",
+      "extended_by": ["005", "013"]
     },
     {
       "id": "003",
@@ -69,7 +71,8 @@
         "tooling"
       ],
       "file": "reference/PROTOCOL.md",
-      "note": "Superseded by lattice-lite skill and MCP server"
+      "note": "Superseded by lattice-lite skill and MCP server",
+      "extended_by": ["009"]
     },
     {
       "id": "005",
@@ -89,7 +92,8 @@
       "grounded_in": [
         "002",
         "004"
-      ]
+      ],
+      "extended_by": ["013"]
     },
     {
       "id": "006",
@@ -134,7 +138,8 @@
         "002",
         "005",
         "006"
-      ]
+      ],
+      "extended_by": ["013"]
     },
     {
       "id": "008",
@@ -175,7 +180,8 @@
         "004",
         "008"
       ],
-      "source_file": "/mnt/project/agora_project_prompt.md"
+      "source_file": "/mnt/project/agora_project_prompt.md",
+      "extended_by": ["010"]
     },
     {
       "id": "010",
@@ -197,7 +203,8 @@
         "001",
         "002",
         "009"
-      ]
+      ],
+      "extended_by": ["011", "012"]
     },
     {
       "id": "011",
@@ -221,7 +228,8 @@
         "002",
         "003",
         "010"
-      ]
+      ],
+      "extended_by": ["012"]
     },
     {
       "id": "012",
@@ -246,8 +254,32 @@
         "010",
         "011"
       ]
+    },
+    {
+      "id": "013",
+      "created": "2025-12-23T01:15:00Z",
+      "summary": "Lattice Temporality and the Question of Memory: Content is read-only, structure evolves. Layered augmentation model—preserve crystallizations, add forward edges (:EXTENDED_BY, :REFRAMED_BY, :SUPERSEDED_BY). Anti-severance: maintain provenance of thought itself.",
+      "keywords": [
+        "temporality",
+        "memory",
+        "versioning",
+        "immutability",
+        "augmentation",
+        "extended_by",
+        "superseded_by",
+        "reframed_by",
+        "talmudic",
+        "evolution",
+        "anti-severance"
+      ],
+      "file": "events/event_013.md",
+      "grounded_in": [
+        "002",
+        "005",
+        "007"
+      ]
     }
   ],
-  "last_updated": "2025-12-23T00:45:00Z",
+  "last_updated": "2025-12-23T01:15:00Z",
   "repository": "https://github.com/physicalweb/lattice"
 }
