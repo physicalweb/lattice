@@ -198,8 +198,32 @@
         "002",
         "009"
       ]
+    },
+    {
+      "id": "011",
+      "created": "2025-12-23T00:15:00Z",
+      "summary": "Lattice as Complementary Layer to Optical Tokens: Labs will solve encoding/perception; Agora solves semantic organization. Different layers, not competing. Strategic positioning for individual contributor.",
+      "keywords": [
+        "optical-tokens",
+        "encoding",
+        "perception",
+        "semantic-organization",
+        "complementary",
+        "strategy",
+        "labs",
+        "DeepSeek",
+        "attention",
+        "interface-layer",
+        "positioning"
+      ],
+      "file": "events/event_011.md",
+      "grounded_in": [
+        "002",
+        "003",
+        "010"
+      ]
     }
   ],
-  "last_updated": "2025-12-22T23:30:00Z",
+  "last_updated": "2025-12-23T00:15:00Z",
   "repository": "https://github.com/physicalweb/lattice"
 }
