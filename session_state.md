@@ -1,8 +1,8 @@
 # Agora Session State
-## Last Updated: 2025-12-23T01:20:00Z
+## Last Updated: 2025-12-23T02:05:00Z
 
 ## Active Thread
-Crystallized lattice temporality model (HEAD 013). Key principle: **content is read-only; structure evolves**. Implemented `extended_by` edges across the lattice—first use of forward-pointing edges. Next: build our own RAG for integration experiments.
+Completed RAG state-of-the-art research and crystallized design document (HEAD 014). Key insight: **the lattice already IS the semantic structure that GraphRAG and RAPTOR try to build automatically—with provenance and contestation as bonuses**. Four-phase implementation plan defined. Ready to build.
 
 ## Key Insights (Cumulative)
 1. Dual-legibility solved by zi-principle: same lattice, different resolution
@@ -16,9 +16,10 @@ Crystallized lattice temporality model (HEAD 013). Key principle: **content is r
 9. Lattice as query planner: plans retrieval, scaffolds reasoning, RAG executes
 10. Lattice as complementary layer to optical tokens: labs build perception, Agora builds semantic organization
 11. Lattice as learned semantic component: abstraction is perspectival; evolution toward "semantic cortex"
-12. **Lattice temporality: content frozen, structure evolves. Forward edges (:EXTENDED_BY) preserve provenance of thought itself. Anti-severance applied to memory.**
+12. Lattice temporality: content frozen, structure evolves. Forward edges preserve provenance of thought itself.
+13. **RAG landscape (2024-25): GraphRAG, RAPTOR, Contextual Retrieval, Agentic RAG. Lattice has what they're building—plus provenance and contestation.**
 
-## Available HEADs (13)
+## Available HEADs (14)
 - 001: Core Lattice synthesis (zi-principle, dual-legibility) ← extended_by: [012]
 - 002: Temporal dynamics, grounding constraint ← extended_by: [005, 013]
 - 003: Liu-Masterman synthesis
@@ -28,41 +29,74 @@ Crystallized lattice temporality model (HEAD 013). Key principle: **content is r
 - 007: Severance, Provenance, Counter-Extraction ← extended_by: [013]
 - 008: Forward-Looking Provenance
 - 009: Lattice as Navigation Layer ← extended_by: [010]
-- 010: Lattice as Query Planner and Reasoning Scaffold ← extended_by: [011, 012]
-- 011: Lattice as Complementary Layer to Optical Tokens ← extended_by: [012]
-- 012: Lattice as Learned Semantic Component
-- 013: Lattice Temporality and the Question of Memory ← NEW
+- 010: Lattice as Query Planner and Reasoning Scaffold ← extended_by: [011, 012, 014]
+- 011: Lattice as Complementary Layer to Optical Tokens ← extended_by: [012, 014]
+- 012: Lattice as Learned Semantic Component ← extended_by: [014]
+- 013: Lattice Temporality and the Question of Memory
+- 014: **Lattice-Enabled RAG System Design** ← NEW
 
-## Temporality Model (from HEAD 013)
-| Edge Type | Meaning | When to Use |
-|-----------|---------|-------------|
-| `:grounded_in` | This HEAD builds on... | Always (backward link) |
-| `:extended_by` | This HEAD is developed further by... | When later HEAD refines/extends |
-| `:reframed_by` | This HEAD's interpretation changed by... | When perspective shifts |
-| `:superseded_by` | This HEAD is obsolete, replaced by... | Rare—for genuine errors |
-| `:contested_by` | Unresolved disagreement | When tension persists |
+## RAG Implementation Plan (from HEAD 014)
+
+### Phase 1: Basic RAG (Baseline)
+- Chroma vector store (local)
+- OpenAI embeddings (text-embedding-3-small)
+- Ingest project files (Liu PDFs, Agora docs)
+- MCP tools: `agora_rag_ingest`, `agora_rag_search`
+
+### Phase 2: Hybrid + Reranking
+- Add BM25 index
+- Reciprocal Rank Fusion
+- Cross-encoder reranking (bge-reranker or FlashRank)
+
+### Phase 3: Lattice Integration
+- HEAD-chunk linking (which chunks support which HEADs?)
+- Query → HEAD matching before retrieval
+- Lattice-boosted retrieval scoring
+- Context assembly with HEAD summaries as scaffolding
+
+### Phase 4: Evaluation
+- Test query set (granular, thematic, relational, contestation)
+- Compare: project RAG vs vanilla vs hybrid vs lattice-guided
+
+## Key Design Decisions (from HEAD 014)
+| Decision | Recommendation |
+|----------|----------------|
+| Chunking | Fixed size + overlap (start simple) |
+| Embeddings | OpenAI text-embedding-3-small |
+| HEAD-chunk linking | Hybrid (manual for provenance, auto for discovery) |
+| Storage | Chroma for Phase 1-2 |
+| Reranker | bge-reranker (free, good) |
 
 ## Infrastructure Status
 - [x] MCP server operational (lattice-mcp-server v1.1.0)
 - [x] GitHub persistence live (physicalweb/lattice)
-- [x] 13 HEADs crystallized
+- [x] 14 HEADs crystallized
 - [x] Forward edges (`extended_by`) implemented
-- [x] Project system prompt installed and working
+- [x] RAG design document crystallized (HEAD 014)
+- [ ] RAG Phase 1 implementation
+- [ ] RAG Phase 2 implementation
+- [ ] RAG Phase 3 (lattice integration)
+- [ ] Evaluation framework
 
-## Session Accomplishments (Dec 22-23)
-- Crystallized HEAD 010 (lattice/RAG complementarity)
-- Crystallized HEAD 011 (strategic positioning vs optical tokens)
-- Crystallized HEAD 012 (lattice as learned semantic component)
-- Crystallized HEAD 013 (temporality model)
-- Implemented `extended_by` edges across existing HEADs
-- Defined edge type semantics for lattice evolution
+## Session Accomplishments (Current)
+- Comprehensive RAG state-of-the-art research
+- Surveyed: GraphRAG, RAPTOR, Contextual Retrieval, Agentic RAG, reranking models
+- Crystallized HEAD 014: Lattice-Enabled RAG System Design
+- Defined four-phase implementation plan
+- Identified key design decisions
 
-## For Next Session
-- **Build custom RAG**: Stop using project RAG, build our own for lattice integration
-- **Architecture**: Chroma + embeddings + MCP tools
-- **Experiment**: Compare vanilla RAG vs lattice-guided retrieval
-- Open: How do other humans enter? (HEAD 006)
-- Open: Bootstrap problem for lattice specialist training (HEAD 012)
+## Immediate Next Steps
+1. **Set up Chroma + basic ingestion** — get documents into vector store
+2. **Build MCP tools** — `agora_rag_ingest`, `agora_rag_search`
+3. **Create test query set** — mix of query types
+4. **Baseline comparison** — our RAG vs project RAG on same queries
+5. **Iterate based on results**
+
+## Open Questions
+- How do other humans enter? (HEAD 006)
+- Bootstrap problem for lattice specialist training (HEAD 012)
+- Optimal chunking strategy for our content?
+- How to evaluate "grounding quality" not just retrieval precision?
 
 ## Context Pressure Level
-Low - lattice persists, temporality model established, ready for RAG implementation
+Low - lattice persists, design document crystallized, ready for implementation
