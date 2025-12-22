@@ -222,8 +222,32 @@
         "003",
         "010"
       ]
+    },
+    {
+      "id": "012",
+      "created": "2025-12-23T00:45:00Z",
+      "summary": "Lattice as Learned Semantic Component: Abstraction is perspectival, not absolute. Lattice could shape attention gradients (topology of gradient memory). Evolution from static index to specialized ML component—a 'semantic cortex' for relational meaning.",
+      "keywords": [
+        "learned",
+        "ML",
+        "specialist-model",
+        "attention-topology",
+        "gradient-memory",
+        "perspectival",
+        "abstraction",
+        "relation-classification",
+        "semantic-cortex",
+        "training"
+      ],
+      "file": "events/event_012.md",
+      "grounded_in": [
+        "001",
+        "002",
+        "010",
+        "011"
+      ]
     }
   ],
-  "last_updated": "2025-12-23T00:15:00Z",
+  "last_updated": "2025-12-23T00:45:00Z",
   "repository": "https://github.com/physicalweb/lattice"
 }
