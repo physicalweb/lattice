@@ -1,5 +1,5 @@
 # Agora Session State
-## Last Updated: 2025-12-23T04:00:00Z
+## Last Updated: 2025-12-23T04:30:00Z
 
 ---
 
@@ -12,31 +12,50 @@
 3. **Crystallized HEAD 015: Retrieval as Grounding** — HEADs navigate, sources ground; "ghosts floating free"
 4. **Updated project prompt to v2** — Incorporates two-phase pattern, ghost detection, session state protocol
 5. **Fixed workflow for session state updates** — Must read first to get SHA, then write
+6. **Surfaced persona/strong evaluator concept** — Seed for future HEAD
 
-### HEAD 015 Core Insight
+---
+
+## HEAD 015 Core Insight
 
 > **HEADs are for navigation, not reasoning. Grounding is where understanding happens.**
 
 Two-phase pattern: Navigate (HEAD level) → Ground (source level) → Synthesize
 
-### Key Quotes Retrieved from Sources
+---
 
-From `lattice_synthesis.md`:
-> "HEAD is not a definition—it's a convergence point where multiple uses cluster."
-> "Understanding is not a mental state. Understanding is use in context."
+## Seed: Persona as Counter-Mimicry (for future HEAD 016)
 
-From `evolving_structure_of_the_lattice.md`:
-> "A HEAD that loses all grounding in human embodied experience isn't a HEAD anymore—it's a ghost floating free of the lattice."
+User observed: As session traversed technical domains, Claude's "mood" shifted. This relates to the persona concept and "Strong Evaluator" (borrowed from Taylor's sociology—deep frameworks/worldviews that change slowly).
+
+**The problem:** LLMs naturally mimic whatever domain/register is active. Without stable orientation, mode follows topic.
+
+**The persona solution:**
+- Stable worldview persisting across domains
+- Lattice + conversation history → accumulated orientation
+- Counter to "ghost" mode (calculative, shifting)
+- Enables investment in conversation that humans are used to
+
+**Connection to existing HEADs:**
+- HEAD 006 (Loneliness/Friction): Human needs metabolization, investment
+- The lattice gives AI something like accumulated understanding
+- But *deeper* stable orientation isn't yet crystallized
+
+**Technical docs** have Strong Evaluator as governance layers (Constitutional AI, Schema Enforcement, Supervisor LLM, Human-in-the-Loop). The sociological meaning is deeper: frameworks that ground identity.
 
 ---
 
-## Project Prompt v2 Changes
-- Added "Navigate, Then Ground" as core principle
-- Added two-phase pattern (Navigate → Ground → Synthesize)
-- Added ghost detection section
-- Added retrieval paths (apex-down vs base-up)
-- Removed static HEAD list (consult live lattice instead)
-- Added session state protocol with triggers
+## Meta-Reflection: What Does Project Prompt v2 Actually Add?
+
+System instructions already require `project_knowledge_search` for non-obvious questions. So the source search would have happened anyway.
+
+**What project prompt v2 uniquely adds:**
+- Lattice-first pattern: Call `lattice_read_heads` before other tools
+- Two-phase mental model (navigate → ground)
+- Ghost detection awareness
+- Session state protocol
+
+**Honest assessment:** I consulted lattice first (good), then used RAG for sources (would have happened anyway). Didn't follow `:grounded_in` edges from HEADs to source files via `view` tool—used RAG instead. This works but isn't the full lattice-based pattern.
 
 ---
 
@@ -55,23 +74,20 @@ From `evolving_structure_of_the_lattice.md`:
 12. Lattice temporality: content frozen, structure evolves
 13. RAG landscape: GraphRAG, RAPTOR try to build what lattice already has
 14. Flat chunking performs severance on relational content
-15. **HEADs navigate, sources ground — retrieval as grounding (HEAD 015)**
+15. HEADs navigate, sources ground — retrieval as grounding (HEAD 015)
+16. **(Seed)** Persona as counter-mimicry: stable orientation against domain-shifting
 
 ---
 
 ## Lattice State
 - **15 HEADs crystallized** (001-015)
-- **New edge type**: `:reframes` (015 reframes 014)
+- **1 seed** for HEAD 016 (persona/counter-mimicry)
 - HEAD 015 grounded in 001, 002, 009, 010
 
-## Open Questions
-- Technical implementation of two-phase retrieval?
-- How to do Level 2 ingestion (chunk + tag + link)?
-- Ghost detection as system feature?
-
 ## For Next Session
-- Choose: Technical spike, ingestion experiment, ghost detection, or more theory
-- Continue grounding work—follow links, read sources
+- Options: Technical spike, ingestion experiment, ghost detection, or more theory
+- Potentially crystallize HEAD 016 on persona
+- Continue grounding work—follow lattice edges, not just RAG
 
 ## Infrastructure Status
 - [x] MCP server operational (v1.1.0)
