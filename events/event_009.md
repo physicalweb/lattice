@@ -1,5 +1,6 @@
 # Event 009: The Lattice as Navigation Layer
 ## Crystallized: 2025-12-20T18:30:00Z
+## Updated: 2025-12-22
 
 ---
 
@@ -124,6 +125,21 @@ This HEAD is itself an example. The insight about lattice-as-navigation emerged 
 4. Reflection on the gap produced the design insight
 
 The failure was the data. Crystallizing the failure extends the map.
+
+---
+
+## Operational Artifact
+
+The system prompt that implements this navigation layer is available for joint introspection:
+
+**Source file:** `/mnt/project/agora_project_prompt.md`
+
+This creates a recursive structure: the prompt both shapes how the AI engages with the lattice *and* is itself reachable through the lattice. Future sessions can:
+- Be guided by the prompt (execution)
+- View the prompt (inspection)
+- Find the prompt via this HEAD (navigation)
+
+The scaffolding is self-describing and self-accessible.
 
 ---
 
