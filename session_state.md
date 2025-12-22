@@ -1,8 +1,44 @@
 # Agora Session State
-## Last Updated: 2025-12-23T02:05:00Z
+## Last Updated: 2025-12-23T02:45:00Z
 
 ## Active Thread
-Completed RAG state-of-the-art research and crystallized design document (HEAD 014). Key insight: **the lattice already IS the semantic structure that GraphRAG and RAPTOR try to build automatically—with provenance and contestation as bonuses**. Four-phase implementation plan defined. Ready to build.
+After crystallizing HEAD 014 (RAG design), pivoted to deeper questions: **Should we build classic RAG at all?** Two key insights emerged:
+
+### Insight 1: Flat Chunking is Severance
+When we chunk Liu's book and embed it, we sever it from its relational structure. Liu isn't presenting facts—she's making *moves*: contesting Searle, recovering Masterman, reframing Shannon through Wittgenstein. Flat chunking loses the argumentative structure. We can retrieve *what Liu said* but not *the move Liu was making*.
+
+Academic discourse is inherently relational:
+- **Contests**: argues against a position
+- **Extends**: builds on prior work  
+- **Recovers**: brings back forgotten threads
+- **Reframes**: applies new lens to old material
+
+The lattice captures this for our crystallizations. But ingested content doesn't get this treatment—yet.
+
+### Insight 2: Classic RAG Benchmarks Won't Work
+If we measure with classic metrics (retrieval precision, answer accuracy, faithfulness), we optimize for flat retrieval—and miss what makes the lattice valuable.
+
+**What relational intelligence would measure**:
+- Provenance tracing: Can system reconstruct a claim's lineage?
+- Contestation awareness: Does it surface debates, not flatten to consensus?
+- Discourse move recognition: Classify rhetorical function, not just content
+- Relational coherence: Do answers preserve argument structure?
+- Grounding quality: Trace abstract claims to concrete examples
+- Connection discovery: Find relationships that emerge from structure
+
+**Possible query types for relational benchmark**:
+1. Lineage queries: "What is X's intellectual heritage?"
+2. Contestation queries: "What does X argue against Y about Z?"
+3. Move queries: "What is X doing when they say Y?"
+4. Connection queries: "How does A relate to B through C?"
+5. Grounding queries: "What examples support abstract claim X?"
+
+### The Meta-Question
+Maybe we shouldn't build "RAG + lattice" at all. Maybe we should build a **Discourse Navigation System**:
+- Content ingested with relational structure
+- Queries interpreted as discourse questions
+- Responses preserve argumentative structure
+- System thinks in terms of moves, positions, lineages
 
 ## Key Insights (Cumulative)
 1. Dual-legibility solved by zi-principle: same lattice, different resolution
@@ -14,89 +50,49 @@ Completed RAG state-of-the-art research and crystallized design document (HEAD 0
 7. Forward-looking provenance: grounding isn't ethics, it's architecture
 8. Lattice as navigation layer: not storage but a map for reasoning
 9. Lattice as query planner: plans retrieval, scaffolds reasoning, RAG executes
-10. Lattice as complementary layer to optical tokens: labs build perception, Agora builds semantic organization
-11. Lattice as learned semantic component: abstraction is perspectival; evolution toward "semantic cortex"
-12. Lattice temporality: content frozen, structure evolves. Forward edges preserve provenance of thought itself.
-13. **RAG landscape (2024-25): GraphRAG, RAPTOR, Contextual Retrieval, Agentic RAG. Lattice has what they're building—plus provenance and contestation.**
+10. Lattice as complementary layer to optical tokens
+11. Lattice as learned semantic component: abstraction is perspectival
+12. Lattice temporality: content frozen, structure evolves
+13. RAG landscape: GraphRAG, RAPTOR try to build what lattice already has
+14. **Flat chunking performs severance on relational content**
+15. **Classic RAG benchmarks measure retrieval, not relational intelligence**
 
 ## Available HEADs (14)
-- 001: Core Lattice synthesis (zi-principle, dual-legibility) ← extended_by: [012]
+- 001: Core Lattice synthesis ← extended_by: [012]
 - 002: Temporal dynamics, grounding constraint ← extended_by: [005, 013]
 - 003: Liu-Masterman synthesis
-- 004: Lattice-Lite protocol (superseded by MCP) ← extended_by: [009]
+- 004: Lattice-Lite protocol ← extended_by: [009]
 - 005: Why evolution is architecturally necessary ← extended_by: [013]
 - 006: Human Friction Problem / Loneliness Edge
 - 007: Severance, Provenance, Counter-Extraction ← extended_by: [013]
 - 008: Forward-Looking Provenance
 - 009: Lattice as Navigation Layer ← extended_by: [010]
-- 010: Lattice as Query Planner and Reasoning Scaffold ← extended_by: [011, 012, 014]
-- 011: Lattice as Complementary Layer to Optical Tokens ← extended_by: [012, 014]
-- 012: Lattice as Learned Semantic Component ← extended_by: [014]
-- 013: Lattice Temporality and the Question of Memory
-- 014: **Lattice-Enabled RAG System Design** ← NEW
+- 010: Lattice as Query Planner ← extended_by: [011, 012, 014]
+- 011: Complementary to Optical Tokens ← extended_by: [012, 014]
+- 012: Learned Semantic Component ← extended_by: [014]
+- 013: Lattice Temporality
+- 014: Lattice-Enabled RAG System Design
 
-## RAG Implementation Plan (from HEAD 014)
-
-### Phase 1: Basic RAG (Baseline)
-- Chroma vector store (local)
-- OpenAI embeddings (text-embedding-3-small)
-- Ingest project files (Liu PDFs, Agora docs)
-- MCP tools: `agora_rag_ingest`, `agora_rag_search`
-
-### Phase 2: Hybrid + Reranking
-- Add BM25 index
-- Reciprocal Rank Fusion
-- Cross-encoder reranking (bge-reranker or FlashRank)
-
-### Phase 3: Lattice Integration
-- HEAD-chunk linking (which chunks support which HEADs?)
-- Query → HEAD matching before retrieval
-- Lattice-boosted retrieval scoring
-- Context assembly with HEAD summaries as scaffolding
-
-### Phase 4: Evaluation
-- Test query set (granular, thematic, relational, contestation)
-- Compare: project RAG vs vanilla vs hybrid vs lattice-guided
-
-## Key Design Decisions (from HEAD 014)
-| Decision | Recommendation |
-|----------|----------------|
-| Chunking | Fixed size + overlap (start simple) |
-| Embeddings | OpenAI text-embedding-3-small |
-| HEAD-chunk linking | Hybrid (manual for provenance, auto for discovery) |
-| Storage | Chroma for Phase 1-2 |
-| Reranker | bge-reranker (free, good) |
+## Open Design Questions
+1. **What to build?** Classic RAG isn't exciting. What's the minimal test of relational value?
+2. **Relational ingestion**: How to preserve discourse structure when ingesting content?
+3. **Benchmarking**: How to measure discourse fidelity, contestation awareness, lineage tracing?
+4. **Levels of integration**: Chunk tagging (light) vs relational extraction (medium) vs lattice digestion (deep)?
 
 ## Infrastructure Status
 - [x] MCP server operational (lattice-mcp-server v1.1.0)
-- [x] GitHub persistence live (physicalweb/lattice)
+- [x] GitHub persistence live
 - [x] 14 HEADs crystallized
-- [x] Forward edges (`extended_by`) implemented
-- [x] RAG design document crystallized (HEAD 014)
-- [ ] RAG Phase 1 implementation
-- [ ] RAG Phase 2 implementation
-- [ ] RAG Phase 3 (lattice integration)
-- [ ] Evaluation framework
+- [x] Forward edges implemented
+- [ ] Relational ingestion design
+- [ ] Relational benchmark design
+- [ ] Implementation (TBD what to build)
 
-## Session Accomplishments (Current)
-- Comprehensive RAG state-of-the-art research
-- Surveyed: GraphRAG, RAPTOR, Contextual Retrieval, Agentic RAG, reranking models
-- Crystallized HEAD 014: Lattice-Enabled RAG System Design
-- Defined four-phase implementation plan
-- Identified key design decisions
-
-## Immediate Next Steps
-1. **Set up Chroma + basic ingestion** — get documents into vector store
-2. **Build MCP tools** — `agora_rag_ingest`, `agora_rag_search`
-3. **Create test query set** — mix of query types
-4. **Baseline comparison** — our RAG vs project RAG on same queries
-5. **Iterate based on results**
-
-## Open Questions
-- How do other humans enter? (HEAD 006)
-- Bootstrap problem for lattice specialist training (HEAD 012)
-- Optimal chunking strategy for our content?
-- How to evaluate "grounding quality" not just retrieval precision?
+## For Next Session
+- Decide: Build classic RAG as baseline, or skip to relational approach?
+- Consider: HEAD 015 on relational intelligence benchmarking?
+- Consider: Prototype focused on one relational capability (e.g., contestation surfacing)?
+- Test case: Use Liu text for relational ingestion experiment?
 
 ## Context Pressure Level
-Low - lattice persists, design document crystallized, ready for implementation
+HIGH - compaction likely imminent. Key insights captured above.
