@@ -19,7 +19,8 @@
       "note": "Foundational document - content in Agora project files",
       "extended_by": [
         "012",
-        "015"
+        "015",
+        "016"
       ]
     },
     {
@@ -196,7 +197,8 @@
       "source_file": "/mnt/project/agora_project_prompt.md",
       "extended_by": [
         "010",
-        "015"
+        "015",
+        "016"
       ]
     },
     {
@@ -304,6 +306,9 @@
         "002",
         "005",
         "007"
+      ],
+      "extended_by": [
+        "016"
       ]
     },
     {
@@ -361,9 +366,38 @@
       ],
       "reframes": [
         "014"
+      ],
+      "extended_by": [
+        "016"
+      ]
+    },
+    {
+      "id": "016",
+      "created": "2025-12-23T15:45:00Z",
+      "summary": "Lattice as Semantic Space with Projective Views: Not layers but a navigable space. HEADs and sources coexist. Views are projections for purpose (theory depth, product coherence, external share, research handoff). Echoes 'language in use'—meaning is context-dependent, actualized by view.",
+      "keywords": [
+        "semantic-space",
+        "views",
+        "projection",
+        "snapshot",
+        "aspects",
+        "theory",
+        "concept",
+        "feature",
+        "rendering",
+        "language-in-use",
+        "context",
+        "Wittgenstein"
+      ],
+      "file": "events/event_016.md",
+      "grounded_in": [
+        "001",
+        "009",
+        "013",
+        "015"
       ]
     }
   ],
-  "last_updated": "2025-12-23T03:00:00Z",
+  "last_updated": "2025-12-23T15:45:00Z",
   "repository": "https://github.com/physicalweb/lattice"
 }
