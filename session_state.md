@@ -1,90 +1,104 @@
 # Agora Session State
-## Last Updated: 2025-12-23T18:15:00Z
+## Last Updated: 2025-12-23T19:00:00Z
 
 ---
 
-## Active Thread: Social Topology of Knowledge
+## Active Thread: Research Execution — MCP & NotebookLM Ecosystem
 
-### What Happened This Session (Continued)
+### What Happened This Session
 
-Previous (compacted):
-- HEAD 016 crystallized (semantic space with projective views)
-- Lattice Product Concept View synthesized
-- Deep competitive research (GraphRAG, RAPTOR, KGs, agent memory)
-- Critical comparison analysis produced
-- HEAD 017 crystallized (Differentiation Analysis)
+1. **HEAD 018 crystallized: The Social Topology of Knowledge**
+   - Reframes HEAD 017's "contestation mechanics" as broader social topology
+   - Not relations between facts—relations between people in life situations
+   - The lattice IS the co-development process, not a tool for it
 
-Current:
-- **HEAD 018 crystallized: The Social Topology of Knowledge**
+2. **Architecture discussion: RAPTOR and content layer**
+   - Three-layer model clarified: Practice → Lattice → Content
+   - RAPTOR-style tools can be content layer; lattice is our semantic contribution
+   - "Own the lattice layer, borrow the content layer"
 
----
+3. **Research plan created** (research_plan_mcp_notebooklm.md)
+   - Four tasks: MCP ecosystem, NotebookLM alternatives, RAPTOR, graph systems
+   - Structured for parallel model execution
 
-## HEAD 018 Core Insight
-
-**The foundational reframe:**
-
-> "Not relations between facts—but relations between people in their life situations."
-
-HEAD 017 identified "contestation mechanics" as the clearest differentiator. But this framing is too narrow—too propositional.
-
-What we're actually modeling is the **social topology of knowledge**:
-- The CEO speaks from authority, with stakes in outcomes
-- The external consultant speaks from outside, with different visibility
-- The parliamentary advisor speaks from political constraint
-
-These positions are **constitutive of meaning**, not metadata.
-
-**The crucial move:**
-
-> "The lattice IS the co-development process, not a tool for it."
-
-What we do in dialogue—correction, crystallization, back-and-forth—IS the thing. The lattice is the residue, not the infrastructure.
-
-| Old framing | New framing |
-|-------------|-------------|
-| Build a system | Practice a process |
-| Tool for knowledge management | Residue of co-development |
-| Contestation as feature | Social topology as medium |
-| What differentiates us | What we're actually doing |
+4. **Research executed** (research_findings_mcp_notebooklm.md)
+   - MCP ecosystem surveyed: 6+ directories, dozens of relevant servers
+   - NotebookLM alternatives: SurfSense, Open Notebook, AnythingLLM
+   - RAPTOR: Official impl + LlamaIndex pack ready for use
+   - Graph systems: GraphRAG, Mem0 (hybrid vector + graph)
 
 ---
 
-## Strategic Implications of HEAD 018
+## Key Research Findings
 
-The reframe shifts focus from "what features to build" to "what practice to cultivate." This is consistent with the embodied, relational philosophy but has practical consequences:
+### Top Candidates for Content Layer
 
-- **Scale question changes**: Not "how to automate crystallization" but "how to sustain the practice"
-- **Product framing changes**: Not "knowledge management tool" but "co-development environment"
-- **Differentiation becomes practice-based**: What we DO, not what we BUILD
+1. **Chroma MCP Server** — Official, production-ready, direct integration
+2. **LlamaIndex RAPTOR Pack** — Hierarchical retrieval, tree traversal/collapsed modes
+3. **Mem0** — Hybrid architecture pattern (vector + graph + key-value)
+
+### Critical Gap Confirmed
+
+**No existing tool models social topology of knowledge.**
+
+All systems model:
+- Entity-relationship (facts and connections)
+- Semantic similarity (embedding space)
+
+None model:
+- "Who speaks from what position"
+- Preserved disagreement as structure
+- Constitutive provenance
+
+**This validates HEAD 018's reframe: our focus on social topology is genuinely differentiated.**
+
+### Strategic Implications
+
+**Use:**
+- Chroma MCP for vector storage
+- LlamaIndex RAPTOR for hierarchical chunking
+- Open source embeddings (sentence-transformers)
+
+**Learn from:**
+- Mem0's hybrid architecture
+- GraphRAG's community detection
+- SurfSense's integration patterns
+
+**Build ourselves:**
+- Position annotation on HEADs
+- Contestation as first-class structure
+- Constitutive provenance (`:grounded_in` as architectural)
+- Crystallization through dialogue
+
+---
+
+## Documents Created This Session
+
+1. **HEAD 018** (event_018.md) — The Social Topology of Knowledge
+2. **research_plan_mcp_notebooklm.md** — Research handoff document
+3. **research_findings_mcp_notebooklm.md** — Comprehensive research results
+
+All copied to /mnt/project/ for persistence.
 
 ---
 
 ## Lattice State
 
 - **18 HEADs crystallized** (001-018)
-- HEAD 018 reframes HEAD 017 (from contestation mechanics to social topology)
-- Edge updates: 001, 006, 007, 015 → extended_by: [018]; 017 → reframed_by: [018]
+- HEAD 018 reframes 017 (contestation mechanics → social topology)
 
 ---
 
 ## Seeds
 
 ### Seed 1: Persona as Counter-Mimicry
-LLMs mimic domain/register. Persona provides stable orientation. Taylor's "Strong Evaluator" = deep frameworks grounding identity.
-
----
-
-## Documents This Session
-
-1. **Lattice_Product_Concept_View_Dec2025.md** — Synthesis of current understanding
-2. **Lattice_Critical_Comparison_Dec2025.md** — Competitive analysis & strategic focus
-3. **event_018.md** — The Social Topology of Knowledge
+LLMs mimic domain/register. Persona provides stable orientation. Taylor's "Strong Evaluator" = deep frameworks grounding identity. (From earlier session)
 
 ---
 
 ## For Next Session
 
-- Consider implications of HEAD 018 for product/practice distinction
-- Revisit strategic priorities through lens of "practice, not tool"
-- Persona seed still awaits crystallization
-- What does "social topology" mean for edge types? (noted in HEAD 018)
+- Consolidate parallel research from other models
+- Consider hands-on prototyping with Chroma MCP + RAPTOR
+- How does "position" get represented in HEAD metadata?
+- What edge types model social relations?
