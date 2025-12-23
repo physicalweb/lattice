@@ -20,7 +20,8 @@
       "extended_by": [
         "012",
         "015",
-        "016"
+        "016",
+        "017"
       ]
     },
     {
@@ -152,7 +153,8 @@
         "006"
       ],
       "extended_by": [
-        "013"
+        "013",
+        "017"
       ]
     },
     {
@@ -336,7 +338,8 @@
         "012"
       ],
       "reframed_by": [
-        "015"
+        "015",
+        "017"
       ]
     },
     {
@@ -368,7 +371,8 @@
         "014"
       ],
       "extended_by": [
-        "016"
+        "016",
+        "017"
       ]
     },
     {
@@ -395,9 +399,40 @@
         "009",
         "013",
         "015"
+      ],
+      "extended_by": [
+        "017"
       ]
+    },
+    {
+      "id": "017",
+      "created": "2025-12-23T17:30:00Z",
+      "summary": "Differentiation Analysis: Critical comparison to GraphRAG, RAPTOR, traditional KGs, agent memory. Genuine differentiators: contestation as first-class, constitutive provenance, Talmudic temporal model, human crystallization. Strategic focus: contestation mechanics, ghost detection, personal knowledge assistant. Honest assessment of risks and implementation gaps.",
+      "keywords": [
+        "differentiation",
+        "GraphRAG",
+        "RAPTOR",
+        "comparison",
+        "contestation",
+        "provenance",
+        "strategy",
+        "risks",
+        "scale",
+        "automation",
+        "personal-knowledge",
+        "critique",
+        "positioning"
+      ],
+      "file": "events/event_017.md",
+      "grounded_in": [
+        "001",
+        "007",
+        "015",
+        "016"
+      ],
+      "source_file": "/mnt/project/Lattice_Critical_Comparison_Dec2025.md"
     }
   ],
-  "last_updated": "2025-12-23T15:45:00Z",
+  "last_updated": "2025-12-23T17:30:00Z",
   "repository": "https://github.com/physicalweb/lattice"
 }
