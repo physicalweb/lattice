@@ -1,120 +1,106 @@
 # Agora Session State
-## Last Updated: 2025-12-23T15:30:00Z
+## Last Updated: 2025-12-23T16:00:00Z
 
 ---
 
-## Active Thread: Document Lifecycle & Lattice/Source Workflows
+## Active Thread: Semantic Space and Projective Views
 
-### What Happened This Session (continued from earlier)
+### What Happened This Session
 
 1. HEAD 015 crystallized (retrieval as grounding)
 2. Project prompt v2 deployed
 3. Persona seed captured
-4. **New: Document lifecycle and workflow design**
+4. Document lifecycle discussion
+5. **HEAD 016 crystallized: Lattice as Semantic Space with Projective Views**
 
 ---
 
-## Document Lifecycle Model (Working)
+## HEAD 016 Core Insight
 
-### Three States
+The lattice isn't layers (navigation above, sources below). It's a **navigable semantic space** where HEADs and sources coexist.
 
-**FROZEN** (read-only):
-- External sources (Liu, papers, competitors)
-- Your past published/shared work (versions already in use)
-- Historical reference points
+**Views are projections** of this space for different purposes:
+- Theory depth view
+- Product coherence view
+- External share view
+- Research handoff view (e.g., for Gemini)
+- Navigation view (live reasoning)
 
-**LIVE** (evolving):
-- Current working docs
-- Spawned revisions (v7_0 when v6_0 is frozen)
+This echoes "language in use"—meaning is context-dependent, actualized by the view being projected.
 
-**Key principle:** Freezing isn't deletion. Old versions remain as valid grounding. HEADs that reference v6_0 stay valid. New HEADs can reference v7_0.
+**Snapshot = view rendered at a moment**, which can then be frozen and become source material.
 
-### Three Layers
+---
+
+## Document Lifecycle Model (Refined)
+
+### States
+
+**FROZEN**: External sources, past published work, historical reference
+**LIVE**: Current working docs, spawned revisions
+
+### Spatial Model (replaces "layers")
 
 ```
-Sources (frozen) 
-    ↓ ingestion
-Lattice (HEADs accumulate)
-    ↓ synthesis (when needed)
-Synthesis Doc (live → frozen when published)
-    ↓ becomes
-Source for future work
+        SEMANTIC SPACE
+    (HEADs + sources + edges)
+              │
+    ┌─────────┼─────────┐
+    ▼         ▼         ▼
+ [VIEW 1] [VIEW 2] [VIEW 3]
+    │
+    ▼
+ Rendered → Frozen → Becomes source
 ```
 
 ---
 
-## Ingestion Types (Working)
+## Ingestion Types
 
-Same mechanism, different lens:
-
-| Source Type | Ingestion Question |
-|-------------|-------------------|
-| **Tech advancement** | Does this change what's possible? Obsolete anything? |
-| **Competitor/product** | What's their theory? Where do we differ? |
-| **Philosophy/social science** | New concepts? Extends or contests foundations? |
-| **Implementation patterns** | How do others solve X? Best practices? |
+| Source Type | Lens |
+|-------------|------|
+| Tech advancement | What changes? What's obsolete? |
+| Competitor/product | Their theory? Our difference? |
+| Philosophy/social science | New concepts? Extends/contests? |
+| Implementation patterns | Best practices? |
 
 ---
 
-## Aspects as Cross-Cutting Tags (Working)
+## Aspects as Query Dimensions
 
-Document granularity doesn't work for live understanding that cuts across concerns. 
+HEADs carry aspect tags: `theory`, `concept`, `feature`
 
-Proposed: HEADs carry aspect tags: `theory`, `concept`, `feature`
-
-A HEAD can span aspects. A document tends to be *about* one aspect.
-
-Example:
-- HEAD 007 (severance): theory ✓, concept ✓
-- HEAD 015 (retrieval): concept ✓, feature ✓
-
-This lets queries like "all theory-level HEADs" or "features from HEAD 007"
-
----
-
-## Narrative vs Relational Tension
-
-- **Lattice** good for: discrete insights, relations, contestation, grounding chains
-- **Narrative** good for: argument flow, building a case, reader journey
-
-Resolution: **Lattice is primary for live work. Narrative docs are synthesis artifacts—created when needed, frozen when done.**
+Views can filter by aspect:
+- "Show all theory-level HEADs"
+- "What features emerged from HEAD 007?"
 
 ---
 
 ## Seeds (Not Yet Crystallized)
 
 ### Seed 1: Persona as Counter-Mimicry
-LLMs mimic domain/register. Persona provides stable orientation. Connects to HEAD 006 (loneliness/friction). Taylor's "Strong Evaluator" = deep frameworks that ground identity.
-
-### Seed 2: Document Lifecycle & Workflows
-The model above. May crystallize after more iteration.
-
----
-
-## Current Document Status
-
-| Document | State | Action |
-|----------|-------|--------|
-| `Theoretical_Foundations_v3_0.md` | Stale/frozen | Spawn v4_0 when ready |
-| `Product_Concept_v6_0.md` | Stale/frozen | Spawn v7_0 when ready |
-| `Technical_Design_v9_5.docx` | Stale/frozen | v10_0 incorporates HEADs 010-015 |
-| `lattice_synthesis.md` | Semi-current | Working doc or freeze? |
+LLMs mimic domain/register. Persona provides stable orientation. Taylor's "Strong Evaluator" = deep frameworks grounding identity.
 
 ---
 
 ## Key Insights (Cumulative)
-1-15: [see previous state]
-16. **(Seed)** Persona as counter-mimicry
-17. **(Seed)** Document lifecycle: frozen/live states, three-layer model, aspects as cross-cutting tags
+1-15: [see HEADs]
+16. **Lattice as semantic space with projective views** (HEAD 016)
 
 ---
 
 ## Lattice State
-- **15 HEADs crystallized** (001-015)
-- **2 seeds** awaiting crystallization
+- **16 HEADs crystallized** (001-016)
+- **1 seed** awaiting crystallization (persona)
+- HEAD 016 grounded in: 001, 009, 013, 015
+
+## Open Questions
+- View definitions: What exactly constitutes each view type?
+- Aspect taxonomy: Is theory/concept/feature sufficient?
+- View tooling: How to actually project and render views?
+- Cross-view coherence: How to keep views aligned?
 
 ## For Next Session
-- Continue workflow/lifecycle design?
-- Draft updated foundational doc (v4_0 or v7_0)?
-- Define aspect taxonomy?
-- Crystallize seeds?
+- Define specific views and their specs?
+- Implement a view as proof of concept?
+- Crystallize persona seed?
