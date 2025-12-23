@@ -1,104 +1,65 @@
 # Agora Session State
-## Last Updated: 2025-12-23T19:00:00Z
+## Last Updated: 2025-12-24T10:35:00Z
 
 ---
 
-## Active Thread: Research Execution — MCP & NotebookLM Ecosystem
+## Active Thread: Research Consolidation — Multi-Model Analysis
 
 ### What Happened This Session
 
-1. **HEAD 018 crystallized: The Social Topology of Knowledge**
-   - Reframes HEAD 017's "contestation mechanics" as broader social topology
-   - Not relations between facts—relations between people in life situations
-   - The lattice IS the co-development process, not a tool for it
+1. **HEAD 019 crystallized: Technical Stack Blueprint**
+   - Gemini Deep Research analysis synthesized
+   - HippoRAG PPR identified as navigation algorithm for Layer 2
+   - AIF (Argument Interchange Format) for contestation schema
+   - "Bifurcation Tool" pattern: detect conflict → create two HEADs + `:contested_by`
+   - Self-evolving memory (GraphMem) as crystallization mechanism
+   - Key insight: "Components exist; orchestrate, don't invent"
 
-2. **Architecture discussion: RAPTOR and content layer**
-   - Three-layer model clarified: Practice → Lattice → Content
-   - RAPTOR-style tools can be content layer; lattice is our semantic contribution
-   - "Own the lattice layer, borrow the content layer"
+2. **Gemini Report Diagrams Reviewed**
+   - Page 3: Architectural Divergence (Consensus vs Contestation stacks)
+   - Page 7: Lattice Router Architecture (NCP pattern)
+   - Page 10: Consensus vs Contestation visual (NotebookLM smoothing vs Agora preserving)
+   - Page 13: RAPTOR vs HippoRAG (hierarchical tree vs associative mesh)
+   - Page 17: Hybrid Lattice Architecture Blueprint (3-layer stack)
 
-3. **Research plan created** (research_plan_mcp_notebooklm.md)
-   - Four tasks: MCP ecosystem, NotebookLM alternatives, RAPTOR, graph systems
-   - Structured for parallel model execution
-
-4. **Research executed** (research_findings_mcp_notebooklm.md)
-   - MCP ecosystem surveyed: 6+ directories, dozens of relevant servers
-   - NotebookLM alternatives: SurfSense, Open Notebook, AnythingLLM
-   - RAPTOR: Official impl + LlamaIndex pack ready for use
-   - Graph systems: GraphRAG, Mem0 (hybrid vector + graph)
-
----
-
-## Key Research Findings
-
-### Top Candidates for Content Layer
-
-1. **Chroma MCP Server** — Official, production-ready, direct integration
-2. **LlamaIndex RAPTOR Pack** — Hierarchical retrieval, tree traversal/collapsed modes
-3. **Mem0** — Hybrid architecture pattern (vector + graph + key-value)
-
-### Critical Gap Confirmed
-
-**No existing tool models social topology of knowledge.**
-
-All systems model:
-- Entity-relationship (facts and connections)
-- Semantic similarity (embedding space)
-
-None model:
-- "Who speaks from what position"
-- Preserved disagreement as structure
-- Constitutive provenance
-
-**This validates HEAD 018's reframe: our focus on social topology is genuinely differentiated.**
-
-### Strategic Implications
-
-**Use:**
-- Chroma MCP for vector storage
-- LlamaIndex RAPTOR for hierarchical chunking
-- Open source embeddings (sentence-transformers)
-
-**Learn from:**
-- Mem0's hybrid architecture
-- GraphRAG's community detection
-- SurfSense's integration patterns
-
-**Build ourselves:**
-- Position annotation on HEADs
-- Contestation as first-class structure
-- Constitutive provenance (`:grounded_in` as architectural)
-- Crystallization through dialogue
+3. **Industry Bifurcation Confirmed**
+   - Compression & Consensus (NotebookLM, GraphRAG)
+   - Context & Contestation (Agora) ← our differentiator
 
 ---
 
-## Documents Created This Session
+## Concrete Stack from HEAD 019
 
-1. **HEAD 018** (event_018.md) — The Social Topology of Knowledge
-2. **research_plan_mcp_notebooklm.md** — Research handoff document
-3. **research_findings_mcp_notebooklm.md** — Comprehensive research results
-
-All copied to /mnt/project/ for persistence.
+| Layer | Component | Tool |
+|-------|-----------|------|
+| 3 (Router) | Intent-based orchestration | NCP |
+| 2 (Lattice) | Graph storage | Neo4j via mcp-neo4j |
+| 2 (Navigation) | Semantic traversal | HippoRAG (PPR) |
+| 1 (Vector) | Embedding storage | Zilliz/Milvus |
+| 1 (Structure) | Hierarchical summaries | RAPTOR |
+| 1 (Provenance) | Citations | Zotero MCP |
 
 ---
 
 ## Lattice State
 
-- **18 HEADs crystallized** (001-018)
-- HEAD 018 reframes 017 (contestation mechanics → social topology)
+- **19 HEADs crystallized** (001-019)
+- HEAD 019 extends: 010, 013, 014, 015, 017, 018
+- Research consolidation in progress
 
 ---
 
-## Seeds
+## Next Steps
 
-### Seed 1: Persona as Counter-Mimicry
-LLMs mimic domain/register. Persona provides stable orientation. Taylor's "Strong Evaluator" = deep frameworks grounding identity. (From earlier session)
+- Review ChatGPT research (2 MD files in project)
+- Compare/contrast with Gemini findings
+- Identify convergence and divergence across models
+- Consider HEAD 020 for consolidated research synthesis
 
 ---
 
 ## For Next Session
 
-- Consolidate parallel research from other models
-- Consider hands-on prototyping with Chroma MCP + RAPTOR
-- How does "position" get represented in HEAD metadata?
-- What edge types model social relations?
+- Complete multi-model research consolidation
+- Map specific implementation priorities
+- Consider prototype scope (NCP + Neo4j + HippoRAG minimum viable)
