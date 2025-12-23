@@ -1,106 +1,95 @@
 # Agora Session State
-## Last Updated: 2025-12-23T16:00:00Z
+## Last Updated: 2025-12-23T17:30:00Z
 
 ---
 
-## Active Thread: Semantic Space and Projective Views
+## Active Thread: Critical Comparison and Differentiation
 
 ### What Happened This Session
 
-1. HEAD 015 crystallized (retrieval as grounding)
+1. HEAD 015 crystallized earlier (retrieval as grounding)
 2. Project prompt v2 deployed
 3. Persona seed captured
 4. Document lifecycle discussion
 5. **HEAD 016 crystallized: Lattice as Semantic Space with Projective Views**
+6. **Lattice Product Concept View synthesized** — comprehensive snapshot of current understanding across all 16 HEADs
+7. **Deep research into competing approaches** — GraphRAG, RAPTOR, traditional KGs, LLM-constructed graphs, agent memory systems
+8. **Critical comparison analysis produced** — honest assessment of differentiation, risks, strategic focus
+9. **HEAD 017 pending** — Differentiation and strategic focus
 
 ---
 
 ## HEAD 016 Core Insight
 
-The lattice isn't layers (navigation above, sources below). It's a **navigable semantic space** where HEADs and sources coexist.
-
-**Views are projections** of this space for different purposes:
-- Theory depth view
-- Product coherence view
-- External share view
-- Research handoff view (e.g., for Gemini)
-- Navigation view (live reasoning)
-
-This echoes "language in use"—meaning is context-dependent, actualized by the view being projected.
-
-**Snapshot = view rendered at a moment**, which can then be frozen and become source material.
+The lattice isn't layers but a **navigable semantic space** where HEADs and sources coexist. Views are projections for different purposes.
 
 ---
 
-## Document Lifecycle Model (Refined)
+## Critical Comparison Findings (Major Work This Session)
 
-### States
+### Where Lattice Genuinely Differs
 
-**FROZEN**: External sources, past published work, historical reference
-**LIVE**: Current working docs, spawned revisions
+1. **Contestation as first-class** — `:contested_by` preserves disagreement. Others smooth it over.
+2. **Provenance as constitutive** — `:grounded_in` is load-bearing, not metadata.
+3. **Temporal model** — Content frozen, structure evolves (Talmudic).
+4. **Two-phase retrieval** — Navigate at HEAD, ground at source.
+5. **Human crystallization** — Understanding through dialogue, not extraction.
 
-### Spatial Model (replaces "layers")
+### Honest Risks Identified
 
-```
-        SEMANTIC SPACE
-    (HEADs + sources + edges)
-              │
-    ┌─────────┼─────────┐
-    ▼         ▼         ▼
- [VIEW 1] [VIEW 2] [VIEW 3]
-    │
-    ▼
- Rendered → Frozen → Becomes source
-```
+- **No automation = no scale** — Manual crystallization bottleneck
+- **Grounding constraint may be too strong** — What counts as grounding?
+- **No forgetting** — Unbounded growth
+- **Theory-implementation gap** — Rich theory, thin implementation
+- **Unvalidated claims** — Contestation helps? Two-phase beats flat? Unproven.
 
----
+### Strategic Focus Recommended
 
-## Ingestion Types
+**Prioritize:**
+- Contestation mechanics (clearest differentiator)
+- Ghost detection / grounding verification
+- Personal knowledge assistant use case
+- Comparative benchmarking vs GraphRAG/RAPTOR
 
-| Source Type | Lens |
-|-------------|------|
-| Tech advancement | What changes? What's obsolete? |
-| Competitor/product | Their theory? Our difference? |
-| Philosophy/social science | New concepts? Extends/contests? |
-| Implementation patterns | Best practices? |
+**De-prioritize:**
+- View rendering, aspect taxonomy, full doc lifecycle
 
----
+**Investigate:**
+- Semi-automatic crystallization
+- Forgetting mechanisms
+- Grounding metrics
 
-## Aspects as Query Dimensions
+### The Honest Value Proposition
 
-HEADs carry aspect tags: `theory`, `concept`, `feature`
+> The Lattice is a personal semantic memory for extended thinking with AI, where understanding emerges through dialogue, disagreement is preserved, and knowledge maintains connection to its sources.
 
-Views can filter by aspect:
-- "Show all theory-level HEADs"
-- "What features emerged from HEAD 007?"
+Requires human investment. Not automated knowledge management—augmented thinking.
 
 ---
 
-## Seeds (Not Yet Crystallized)
+## Documents Produced This Session
+
+1. **Lattice_Product_Concept_View_Dec2025.md** — Synthesis of current understanding
+2. **Lattice_Critical_Comparison_Dec2025.md** — Competitive analysis & strategic focus
+
+Both uploaded to project files.
+
+---
+
+## Seeds
 
 ### Seed 1: Persona as Counter-Mimicry
-LLMs mimic domain/register. Persona provides stable orientation. Taylor's "Strong Evaluator" = deep frameworks grounding identity.
-
----
-
-## Key Insights (Cumulative)
-1-15: [see HEADs]
-16. **Lattice as semantic space with projective views** (HEAD 016)
+LLMs mimic domain/register. Persona provides stable orientation. Taylor's "Strong Evaluator" = deep frameworks grounding identity. (From earlier session)
 
 ---
 
 ## Lattice State
 - **16 HEADs crystallized** (001-016)
+- **HEAD 017 pending** — Differentiation analysis
 - **1 seed** awaiting crystallization (persona)
-- HEAD 016 grounded in: 001, 009, 013, 015
-
-## Open Questions
-- View definitions: What exactly constitutes each view type?
-- Aspect taxonomy: Is theory/concept/feature sufficient?
-- View tooling: How to actually project and render views?
-- Cross-view coherence: How to keep views aligned?
 
 ## For Next Session
-- Define specific views and their specs?
-- Implement a view as proof of concept?
-- Crystallize persona seed?
+- Crystallize HEAD 017 if compaction interrupted
+- Consider strategic priorities from comparison
+- Begin implementation of prioritized features?
+- Comparative benchmarking design?
