@@ -88,7 +88,7 @@
       "keywords": ["RAG", "retrieval", "query-planner", "reasoning", "scaffold", "multi-step", "architecture", "content-layer", "navigation-layer"],
       "file": "events/event_010.md",
       "grounded_in": ["001", "002", "009"],
-      "extended_by": ["011", "012", "014", "015"]
+      "extended_by": ["011", "012", "014", "015", "019"]
     },
     {
       "id": "011",
@@ -115,7 +115,7 @@
       "keywords": ["temporality", "memory", "versioning", "immutability", "augmentation", "extended_by", "superseded_by", "reframed_by", "talmudic", "evolution", "anti-severance"],
       "file": "events/event_013.md",
       "grounded_in": ["002", "005", "007"],
-      "extended_by": ["016"]
+      "extended_by": ["016", "019"]
     },
     {
       "id": "014",
@@ -124,7 +124,8 @@
       "keywords": ["RAG", "GraphRAG", "RAPTOR", "contextual-retrieval", "hybrid-search", "reranking", "implementation", "Chroma", "embeddings", "BM25", "evaluation", "design"],
       "file": "events/event_014.md",
       "grounded_in": ["010", "011", "012"],
-      "reframed_by": ["015", "017"]
+      "reframed_by": ["015", "017"],
+      "extended_by": ["019"]
     },
     {
       "id": "015",
@@ -134,7 +135,7 @@
       "file": "events/event_015.md",
       "grounded_in": ["001", "002", "009", "010"],
       "reframes": ["014"],
-      "extended_by": ["016", "017", "018"]
+      "extended_by": ["016", "017", "018", "019"]
     },
     {
       "id": "016",
@@ -153,7 +154,8 @@
       "file": "events/event_017.md",
       "grounded_in": ["001", "007", "015", "016"],
       "source_file": "/mnt/project/Lattice_Critical_Comparison_Dec2025.md",
-      "reframed_by": ["018"]
+      "reframed_by": ["018"],
+      "extended_by": ["019"]
     },
     {
       "id": "018",
@@ -162,9 +164,19 @@
       "keywords": ["social-topology", "positions", "life-situations", "co-development", "inhabited", "space", "topology", "articulation", "poetic", "tension", "relational", "practice"],
       "file": "events/event_018.md",
       "grounded_in": ["001", "006", "007", "015"],
-      "reframes": ["017"]
+      "reframes": ["017"],
+      "extended_by": ["019"]
+    },
+    {
+      "id": "019",
+      "created": "2025-12-24T10:30:00Z",
+      "summary": "Technical Stack Blueprint: HippoRAG's PPR for Layer 2 navigation, Neo4j for graph storage, Zilliz for vectors, NCP for orchestration. AIF schema for contestation. Bifurcation Tool pattern. Self-evolving memory (GraphMem) as crystallization mechanism. Components exist; orchestrate, don't invent.",
+      "keywords": ["HippoRAG", "PPR", "PageRank", "NCP", "Neo4j", "Zilliz", "RAPTOR", "AIF", "bifurcation", "orchestration", "Layer-1", "Layer-2", "Layer-3", "stack", "architecture", "GraphMem", "self-evolving"],
+      "file": "events/event_019.md",
+      "grounded_in": ["010", "013", "014", "015", "017", "018"],
+      "source_file": "/mnt/project/Agora_Lattice_Research_Plan_Execution.pdf"
     }
   ],
-  "last_updated": "2025-12-23T18:15:00Z",
+  "last_updated": "2025-12-24T10:30:00Z",
   "repository": "https://github.com/physicalweb/lattice"
 }
