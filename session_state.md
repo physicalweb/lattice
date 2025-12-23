@@ -1,95 +1,90 @@
 # Agora Session State
-## Last Updated: 2025-12-23T17:30:00Z
+## Last Updated: 2025-12-23T18:15:00Z
 
 ---
 
-## Active Thread: Critical Comparison and Differentiation
+## Active Thread: Social Topology of Knowledge
 
-### What Happened This Session
+### What Happened This Session (Continued)
 
-1. HEAD 015 crystallized earlier (retrieval as grounding)
-2. Project prompt v2 deployed
-3. Persona seed captured
-4. Document lifecycle discussion
-5. **HEAD 016 crystallized: Lattice as Semantic Space with Projective Views**
-6. **Lattice Product Concept View synthesized** — comprehensive snapshot of current understanding across all 16 HEADs
-7. **Deep research into competing approaches** — GraphRAG, RAPTOR, traditional KGs, LLM-constructed graphs, agent memory systems
-8. **Critical comparison analysis produced** — honest assessment of differentiation, risks, strategic focus
-9. **HEAD 017 pending** — Differentiation and strategic focus
+Previous (compacted):
+- HEAD 016 crystallized (semantic space with projective views)
+- Lattice Product Concept View synthesized
+- Deep competitive research (GraphRAG, RAPTOR, KGs, agent memory)
+- Critical comparison analysis produced
+- HEAD 017 crystallized (Differentiation Analysis)
 
----
-
-## HEAD 016 Core Insight
-
-The lattice isn't layers but a **navigable semantic space** where HEADs and sources coexist. Views are projections for different purposes.
+Current:
+- **HEAD 018 crystallized: The Social Topology of Knowledge**
 
 ---
 
-## Critical Comparison Findings (Major Work This Session)
+## HEAD 018 Core Insight
 
-### Where Lattice Genuinely Differs
+**The foundational reframe:**
 
-1. **Contestation as first-class** — `:contested_by` preserves disagreement. Others smooth it over.
-2. **Provenance as constitutive** — `:grounded_in` is load-bearing, not metadata.
-3. **Temporal model** — Content frozen, structure evolves (Talmudic).
-4. **Two-phase retrieval** — Navigate at HEAD, ground at source.
-5. **Human crystallization** — Understanding through dialogue, not extraction.
+> "Not relations between facts—but relations between people in their life situations."
 
-### Honest Risks Identified
+HEAD 017 identified "contestation mechanics" as the clearest differentiator. But this framing is too narrow—too propositional.
 
-- **No automation = no scale** — Manual crystallization bottleneck
-- **Grounding constraint may be too strong** — What counts as grounding?
-- **No forgetting** — Unbounded growth
-- **Theory-implementation gap** — Rich theory, thin implementation
-- **Unvalidated claims** — Contestation helps? Two-phase beats flat? Unproven.
+What we're actually modeling is the **social topology of knowledge**:
+- The CEO speaks from authority, with stakes in outcomes
+- The external consultant speaks from outside, with different visibility
+- The parliamentary advisor speaks from political constraint
 
-### Strategic Focus Recommended
+These positions are **constitutive of meaning**, not metadata.
 
-**Prioritize:**
-- Contestation mechanics (clearest differentiator)
-- Ghost detection / grounding verification
-- Personal knowledge assistant use case
-- Comparative benchmarking vs GraphRAG/RAPTOR
+**The crucial move:**
 
-**De-prioritize:**
-- View rendering, aspect taxonomy, full doc lifecycle
+> "The lattice IS the co-development process, not a tool for it."
 
-**Investigate:**
-- Semi-automatic crystallization
-- Forgetting mechanisms
-- Grounding metrics
+What we do in dialogue—correction, crystallization, back-and-forth—IS the thing. The lattice is the residue, not the infrastructure.
 
-### The Honest Value Proposition
-
-> The Lattice is a personal semantic memory for extended thinking with AI, where understanding emerges through dialogue, disagreement is preserved, and knowledge maintains connection to its sources.
-
-Requires human investment. Not automated knowledge management—augmented thinking.
+| Old framing | New framing |
+|-------------|-------------|
+| Build a system | Practice a process |
+| Tool for knowledge management | Residue of co-development |
+| Contestation as feature | Social topology as medium |
+| What differentiates us | What we're actually doing |
 
 ---
 
-## Documents Produced This Session
+## Strategic Implications of HEAD 018
 
-1. **Lattice_Product_Concept_View_Dec2025.md** — Synthesis of current understanding
-2. **Lattice_Critical_Comparison_Dec2025.md** — Competitive analysis & strategic focus
+The reframe shifts focus from "what features to build" to "what practice to cultivate." This is consistent with the embodied, relational philosophy but has practical consequences:
 
-Both uploaded to project files.
+- **Scale question changes**: Not "how to automate crystallization" but "how to sustain the practice"
+- **Product framing changes**: Not "knowledge management tool" but "co-development environment"
+- **Differentiation becomes practice-based**: What we DO, not what we BUILD
+
+---
+
+## Lattice State
+
+- **18 HEADs crystallized** (001-018)
+- HEAD 018 reframes HEAD 017 (from contestation mechanics to social topology)
+- Edge updates: 001, 006, 007, 015 → extended_by: [018]; 017 → reframed_by: [018]
 
 ---
 
 ## Seeds
 
 ### Seed 1: Persona as Counter-Mimicry
-LLMs mimic domain/register. Persona provides stable orientation. Taylor's "Strong Evaluator" = deep frameworks grounding identity. (From earlier session)
+LLMs mimic domain/register. Persona provides stable orientation. Taylor's "Strong Evaluator" = deep frameworks grounding identity.
 
 ---
 
-## Lattice State
-- **16 HEADs crystallized** (001-016)
-- **HEAD 017 pending** — Differentiation analysis
-- **1 seed** awaiting crystallization (persona)
+## Documents This Session
+
+1. **Lattice_Product_Concept_View_Dec2025.md** — Synthesis of current understanding
+2. **Lattice_Critical_Comparison_Dec2025.md** — Competitive analysis & strategic focus
+3. **event_018.md** — The Social Topology of Knowledge
+
+---
 
 ## For Next Session
-- Crystallize HEAD 017 if compaction interrupted
-- Consider strategic priorities from comparison
-- Begin implementation of prioritized features?
-- Comparative benchmarking design?
+
+- Consider implications of HEAD 018 for product/practice distinction
+- Revisit strategic priorities through lens of "practice, not tool"
+- Persona seed still awaits crystallization
+- What does "social topology" mean for edge types? (noted in HEAD 018)
