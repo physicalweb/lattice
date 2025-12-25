@@ -1,59 +1,77 @@
 # Agora Session State
-## Last Updated: 2025-12-24T11:00:00Z
+## Last Updated: 2025-12-25T12:00:00Z
 
 ---
 
-## Active Thread: Research Consolidation Complete
+## Active Thread: Bridge Architecture Decided
 
 ### What Happened This Session
 
-1. **HEAD 019 crystallized and updated: Technical Stack Blueprint**
-   - Gemini Deep Research analysis synthesized
-   - ChatGPT research folded in (MCP survey + NotebookLM ecosystem)
-   - Multi-model convergence documented
+1. **Bridge Architecture Selected**
+   - Open WebUI as throwaway interface (multi-model access)
+   - Lattice MCP Server enhanced for Neo4j (pathway code)
+   - Neo4j AuraDB as single persistence layer (pathway data)
+   - One RAG system, multiple models (Claude, Gemini, GPT-4, local)
 
-2. **Key Findings Consolidated**
-   - HippoRAG PPR as Layer 2 navigation (Gemini)
-   - Per-claim citation granularity (ChatGPT)
-   - "AI structure as starting point" for human crystallization (ChatGPT)
-   - Build *with* vs build *around* (ChatGPT)
-   - Industry bifurcation: Consensus vs Contestation (all models)
+2. **Design Document Created**
+   - `Agora_Bridge_Architecture_v1.docx`
+   - Part I: Design Document (architecture, data model, transfer path)
+   - Part II: Implementation Guide (5-phase setup)
+   - Estimated effort: 10-20 hours total
 
-3. **Multi-Model Convergence Confirmed**
-   - All three models (Claude, Gemini, ChatGPT) independently validated:
-     - Contestation as differentiator
-     - Neo4j for graph storage
-     - Orchestration patterns (NCP, 1MCPServer, Archestra)
-     - Human crystallization as central
-     - Provenance as architectural
+3. **Key Decision Rationale**
+   - Target architecture requires custom UI anyway (React + Tiptap + Yjs)
+   - Any prototype interface is inherently throwaway
+   - Semantic work (Lattice MCP) transfers 100% to production
+   - Neo4j schema and queries transfer directly
+   - Gemini's massive context window accessible immediately
+
+---
+
+## Bridge Architecture Summary
+
+```
+┌─────────────────────────────────────┐
+│           Open WebUI                │  ← Throwaway
+│   Claude │ Gemini │ GPT-4 │ Local   │
+└──────────────┬──────────────────────┘
+               │
+       ┌───────┴───────┐
+       │ Lattice MCP   │  ← 100% transfer
+       │ Server        │
+       └───────┬───────┘
+               │
+       ┌───────┴───────┐
+       │  Neo4j AuraDB │  ← 100% transfer
+       │  (Graph+Vector)│
+       └───────────────┘
+```
+
+---
+
+## Implementation Phases
+
+| Phase | Task | Effort |
+|-------|------|--------|
+| 1 | Neo4j AuraDB setup | 1-2 hours |
+| 2 | Lattice MCP → Neo4j | 4-8 hours |
+| 3 | Open WebUI deploy | 1-2 hours |
+| 4 | Bridge functions | 2-4 hours |
+| 5 | Integration testing | 2-4 hours |
 
 ---
 
 ## Lattice State
 
 - **19 HEADs crystallized** (001-019)
-- HEAD 019 is comprehensive technical stack blueprint
-- Research phase complete; ready for implementation planning
-
----
-
-## Concrete Stack Summary (HEAD 019)
-
-| Layer | Primary | Alternatives |
-|-------|---------|--------------|
-| 3 (Router) | NCP | 1MCPServer, Archestra |
-| 2 (Graph) | Neo4j | Basic Memory |
-| 2 (Navigation) | HippoRAG PPR | — |
-| 1 (Vector) | Zilliz | Chroma, Needle |
-| 1 (Structure) | RAPTOR | — |
-| 1 (Provenance) | Zotero | OneCite, OpenMetadata |
+- HEAD 019: Technical Stack Blueprint (research synthesis)
+- Bridge Architecture document created
 
 ---
 
 ## For Next Session
 
-- Implementation prioritization
-- Minimum viable prototype scope
-- Consider: NCP + Neo4j + simple PPR as Phase 0
-- Per-claim citation model design
-- API-first architecture decisions
+- Begin Phase 1: Neo4j AuraDB setup
+- Migrate existing HEADs from GitHub to Neo4j
+- Enhance lattice-mcp-server with Neo4j backend
+- Deploy Open WebUI with API keys
