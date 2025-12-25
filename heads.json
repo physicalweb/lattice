@@ -174,9 +174,19 @@
       "keywords": ["HippoRAG", "PPR", "PageRank", "NCP", "Neo4j", "Zilliz", "RAPTOR", "AIF", "bifurcation", "orchestration", "Layer-1", "Layer-2", "Layer-3", "stack", "architecture", "GraphMem", "self-evolving"],
       "file": "events/event_019.md",
       "grounded_in": ["010", "013", "014", "015", "017", "018"],
-      "source_file": "/mnt/project/Agora_Lattice_Research_Plan_Execution.pdf"
+      "source_file": "/mnt/project/Agora_Lattice_Research_Plan_Execution.pdf",
+      "extended_by": ["020"]
+    },
+    {
+      "id": "020",
+      "created": "2025-12-25T12:00:00Z",
+      "summary": "Bridge Architecture Decision Point: Open WebUI (chat-first, MCP) vs Dify (workflow-first, FastAPI). Shared: Neo4j AuraDB persistence. Fork is interface layer—both throwaway but with different transfer characteristics. Open question: prototype content or process?",
+      "keywords": ["bridge", "architecture", "Open-WebUI", "Dify", "FastAPI", "MCP", "workflow", "chat", "orchestration", "decision", "interface", "throwaway", "pathway"],
+      "file": "events/event_020.md",
+      "grounded_in": ["015", "019"],
+      "status": "OPEN"
     }
   ],
-  "last_updated": "2025-12-24T10:30:00Z",
+  "last_updated": "2025-12-25T12:00:00Z",
   "repository": "https://github.com/physicalweb/lattice"
 }
