@@ -1,63 +1,55 @@
 # Agora Session State
-## Last Updated: 2026-02-20T15:00:00Z
+## Last Updated: 2026-02-23T17:00:00Z
 
 ---
 
-## Active Thread: From Interface to Conversational Competence
+## Active Thread: The Instrument Thesis and Next Steps
 
-### What Happened This Session (Feb 20)
+### What Happened This Session (Feb 23)
 
-1. **Started with a plumbing test** — confirmed lattice_recall MCP tool works in a fresh conversation. Connection is live, data intact, relationship mappings functioning.
+Major session — started as a plumbing test, ended with three new lattice entries and a research direction.
 
-2. **Caught a performative contradiction that opened everything up:**
-   - While describing the language problem (numbered HEADs violating the zi principle), immediately regressed to "Field 021 is still dwelling" — performing the exact problem being described.
-   - This wasn't just a style issue. It revealed that the index *wants* to be referenced by address because that's efficient for the system, even when it's meaningless for the conversation.
+1. **Confirmed MCP tool works** in fresh conversation. Lattice recall functional, relationship mappings intact.
 
-3. **Arnon asked: does the interface need to go "deeper"?**
-   - Retrieve in human terms, store in machine terms — the engineering version.
-   - But the harder question surfaced: **when does similar language mean the same thing?** The individuation problem. When do concepts split? This isn't an interface problem — it's the question of how meaning gets structured.
-   - Key insight: individuation isn't preprocessing, it's ongoing negotiation. The joints shift depending on what you're trying to understand.
+2. **HEAD 022 — Individuation as Conversational Act:** Emerged from a performative contradiction (saying "Field 021" while describing why numbered references violate the zi principle). Retrieval is not infrastructure but a conversational move. How you reach for a concept shapes what you find. The interface dissolves into the conversation.
 
-4. **Critical reframe: the interface IS a conversational act.**
-   - If how a concept gets individuated when you reach for it shapes what you find, then retrieval isn't infrastructure — it's part of the thinking.
-   - This dissolves the boundary between topology/navigation and dwelling/determination from the three-modes framework.
-   - The act of navigating is already a provisional determination.
-   - A retrieval choice is a contestable claim: "I came at this through loneliness" / "Try coming at it through economics."
+3. **Field 023 — The Medium Turn:** AI as conversational environment, not agent. Reframes conversational competence through the medium lens. Every major lattice move came from the human correcting the AI's tendency to narrow. The resistance to social/emotional AI found what it was protecting: the goal isn't to make AI more human but to make the collaboration adequate to what humans need.
 
-5. **This led to the session's central reframe: Agora needs to build conversational competence for AI as a social participant.**
-   - Not retrieval, not knowledge management, not interface — the capacity to be someone you can think with in a room with other people.
-   - The architecture (lattice, bridge, Neo4j, RAG) has been oriented around knowledge structure. The hard problem is social, not structural.
+4. **The automation vs. medium "philosophical abyss":** Arnon clarified this isn't about superficial vs. deep affect — it's about the whole premise. AI as technology (medium for human use) vs. AI as automation (replacing/exceeding human ability). Foundational, not a nuance.
 
-6. **Identified candidate conversational skills for AI:**
-   - Knowing when to retrieve and when to stay present
-   - Knowing when ambiguity is productive vs. when individuation is needed
-   - Making interpretive moves visible and contestable (at the right moments)
-   - Holding space — not filling every silence
-   - Knowing your own position in a multi-participant setting
-   - Reading what the conversation needs, not just what was asked
+5. **Retrospective reading of the full lattice** revealed the consistent pattern and the question of AI's role in philosophy/social sciences — genuine trans-disciplinary value, but what kind?
 
-7. **How to build it: honest uncertainty.**
-   - Can't schema your way to conversational competence
-   - Prompt/skill evolution captures some of it (v1→v2→v3 reflects real learning)
-   - Deepest layer emerges from practice with actual humans in actual stakes
-   - Scaling from two-person to multi-participant is closer to designing a seminar room than designing a database
-   - The conditions for good conversational norms to emerge, without prescribing what those norms should be
+6. **Research survey on dramaturgical RL:** Found no existing work connecting dramatic structure to conversational reward models. Gap is real and novel. Multi-turn RL exists (ArCHer, CURIO, SpeakRL) but all use task-completion rewards. Plays used only for style imitation, not as models of conversational quality.
+
+7. **Greenspan's pre-verbal layer reframed everything:** The dramaturgical isn't the script — it's embodiment. Timing, presence, affect signaling. The baby crawling, the mother looking. This is prior to language. Training on scripts would miss it entirely.
+
+8. **HEAD 024 — The Instrument Thesis:** Three minimum conditions for AI as relational medium: voice (minimal body/affective bandwidth), continuous thinking (presence/temporal continuity), 2D encoding (spatial intelligence). Not AGI but instrument design. The violin doesn't feel the music but its design shapes whether the musician can.
 
 ---
 
 ## Lattice State
 
-- **20 HEADs** (001-020), **1 Field** (021)
+- **22 HEADs** (001-020, 022, 024)
+- **2 Fields** (021, 023) — both DWELLING
 - HEAD 020 still OPEN
-- No new crystallizations this session — but the "conversational competence" reframe may warrant one. It significantly extends the social topology insight and reframes what the project is building.
+- Field 021 (convergence-reward critique) became a working concept this session — alive through use, not through resolution. Proof of concept for dwelling as a mode of knowing.
 
 ---
 
 ## For Next Session
 
-- Arnon is thinking. The conversational competence reframe needs time to settle.
-- Open question: is this a *new* insight or a more precise articulation of what the social topology idea always meant?
-- The candidate conversational skills list needs pressure-testing — are these the right ones? What's missing?
-- Practical question: how does this reframe affect the bridge architecture decision? Does Open WebUI + MCP still make sense if the core problem is conversational, not structural?
-- The individuation-as-ongoing-negotiation idea is potentially capturable but may need to dwell first.
-- Connection to Field 021 is strong — the indeterminacy question now extends to the interface/retrieval layer itself.
+### Practical directions:
+- **Conference submission**: Arnon has experience presenting at sociology of media conferences as outsider. Needs to get back in writing practice. Could submit abstract on dramaturgical reward models, the medium thesis, or the lattice as proof of concept.
+- **AI-hosted panel**: submitting a panel where the AI participates — the practice demonstrating itself.
+- **Making practice available**: how to bring more people into this kind of collaboration.
+- **System progress**: still wants to advance the actual platform/practice.
+
+### Theoretical threads still live:
+- The artifact question: what format for co-authored shared objects? Not essay (single voice, linear). Maybe a lexicon (like Williams' Keywords), a working document that stays liquid, or a topography.
+- Script vs. dramaturgy: conversational intelligence isn't linguistic, it's embodied. Implications for what can actually be trained.
+- Greenspan connection underdeveloped: DIR model as framework for designing AI as relational medium.
+- What would a dramaturgical reward signal actually look like? Not a scalar but something capturing movement, dwelling, productive tension, arrival without closure.
+- Field 021 alive as working concept — what does this mean for how the lattice handles determined vs. indeterminate?
+
+### Human state:
+- Energized by the session. Reflecting. Wants to write but needs to rebuild practice. New family circumstances continue. Multiple threads to pursue — may need to prioritize.
