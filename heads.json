@@ -7,7 +7,7 @@
       "keywords": ["zi", "HEAD", "PhraseEvent", "dual-legibility", "Liu", "Masterman", "CLRU", "fan", "architecture"],
       "file": "reference/lattice_synthesis.md",
       "note": "Foundational document - content in Agora project files",
-      "extended_by": ["012", "015", "016", "017", "018"]
+      "extended_by": ["012", "015", "016", "017", "018", "022"]
     },
     {
       "id": "002",
@@ -52,7 +52,7 @@
       "file": "events/event_006.md",
       "grounded_in": ["002", "005"],
       "contested_by": ["Agora multi-human design principle"],
-      "extended_by": ["018"]
+      "extended_by": ["018", "023"]
     },
     {
       "id": "007",
@@ -61,7 +61,7 @@
       "keywords": ["severance", "provenance", "extraction", "economics", "healing", "grounding", "business-model"],
       "file": "events/event_007.md",
       "grounded_in": ["001", "002", "005", "006"],
-      "extended_by": ["013", "017", "018"]
+      "extended_by": ["013", "017", "018", "023"]
     },
     {
       "id": "008",
@@ -135,7 +135,7 @@
       "file": "events/event_015.md",
       "grounded_in": ["001", "002", "009", "010"],
       "reframes": ["014"],
-      "extended_by": ["016", "017", "018", "019"]
+      "extended_by": ["016", "017", "018", "019", "022"]
     },
     {
       "id": "016",
@@ -165,7 +165,7 @@
       "file": "events/event_018.md",
       "grounded_in": ["001", "006", "007", "015"],
       "reframes": ["017"],
-      "extended_by": ["019"]
+      "extended_by": ["019", "022", "023"]
     },
     {
       "id": "019",
@@ -198,8 +198,31 @@
       "source_file": "panel_discussion_v2.md",
       "interferes_with": ["006", "008", "013"],
       "reframes": "crystallization practice"
+    },
+    {
+      "id": "022",
+      "created": "2026-02-23T15:00:00Z",
+      "summary": "Individuation as Conversational Act: Retrieval is not infrastructure but a social move. How you reach for a concept shapes what you find. The 'interface' dissolves into the conversation itself. Fan structure as multiple paths to the same meaning-territory.",
+      "keywords": ["individuation", "retrieval", "conversational-act", "interface", "fan-structure", "contestable", "ambiguity", "productive", "social", "negotiation", "zi-principle", "performative-contradiction"],
+      "file": "events/event_022.md",
+      "grounded_in": ["001", "003", "015", "018"],
+      "extends": ["015", "018"],
+      "partially_responds_to": ["021"]
+    },
+    {
+      "id": "023",
+      "type": "field",
+      "status": "DWELLING",
+      "created": "2026-02-23T15:30:00Z",
+      "summary": "The Medium Turn: AI as conversational environment, not conversational agent. Reframes conversational competence through the medium lens rather than the capability lens. Holds open: the retrospective pattern (every lattice move came from human correction of AI narrowing), the resistance that found what it was protecting, AI's role in philosophy, and the Greenspan developmental connection.",
+      "keywords": ["medium", "conversational-competence", "social-intelligence", "emotional-intelligence", "Greenspan", "developmental", "automation-vs-medium", "environment", "capability", "resistance", "correction", "philosophy", "trans-disciplinary", "metabolization", "room-not-agent"],
+      "file": "events/event_023.md",
+      "grounded_in": ["006", "007", "018", "022"],
+      "reframes": ["018"],
+      "extends": ["006", "007", "022"],
+      "interferes_with": ["021"]
     }
   ],
-  "last_updated": "2026-02-15T22:00:00Z",
+  "last_updated": "2026-02-23T15:30:00Z",
   "repository": "https://github.com/physicalweb/lattice"
 }
