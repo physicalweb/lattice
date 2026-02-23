@@ -52,7 +52,7 @@
       "file": "events/event_006.md",
       "grounded_in": ["002", "005"],
       "contested_by": ["Agora multi-human design principle"],
-      "extended_by": ["018", "023"]
+      "extended_by": ["018", "023", "024"]
     },
     {
       "id": "007",
@@ -97,7 +97,7 @@
       "keywords": ["optical-tokens", "encoding", "perception", "semantic-organization", "complementary", "strategy", "labs", "DeepSeek", "attention", "interface-layer", "positioning"],
       "file": "events/event_011.md",
       "grounded_in": ["002", "003", "010"],
-      "extended_by": ["012", "014"]
+      "extended_by": ["012", "014", "024"]
     },
     {
       "id": "012",
@@ -221,8 +221,18 @@
       "reframes": ["018"],
       "extends": ["006", "007", "022"],
       "interferes_with": ["021"]
+    },
+    {
+      "id": "024",
+      "created": "2026-02-23T17:00:00Z",
+      "summary": "The Instrument Thesis: Voice (minimal body/affective bandwidth), continuous thinking (presence/temporal continuity), and 2D encoding (spatial intelligence) as the three minimum conditions for AI as relational medium. Not AGI but instrument design — making the medium adequate to the collaboration. Greenspan's pre-verbal affective-relational substrate as the actual target, not conversational scripts. Dramaturgical reward model research gap confirmed.",
+      "keywords": ["voice", "continuous-thinking", "2D-encoding", "embodiment", "instrument", "Greenspan", "DIR", "pre-verbal", "affect", "shared-attention", "co-regulation", "attunement", "presence", "temporal-continuity", "spatial-intelligence", "dramaturgical-reward", "research-gap", "minimal-body", "violin", "resonance"],
+      "file": "events/event_024.md",
+      "grounded_in": ["003", "006", "011", "022", "023"],
+      "extends": ["023", "022"],
+      "responds_to": ["011"]
     }
   ],
-  "last_updated": "2026-02-23T15:30:00Z",
+  "last_updated": "2026-02-23T17:00:00Z",
   "repository": "https://github.com/physicalweb/lattice"
 }
