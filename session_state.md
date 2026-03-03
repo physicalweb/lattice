@@ -1,29 +1,49 @@
 # Agora Session State
-## Last Updated: 2026-02-23T17:00:00Z
+## Last Updated: 2026-03-04T01:00:00Z
 
 ---
 
-## Active Thread: The Instrument Thesis and Next Steps
+## Active Threads
 
-### What Happened This Session (Feb 23)
+### 1. PSM Paper as Validation and Research Program
+The Persona Selection Model paper (Marks, Lindsey, Olah, Feb 2026) confirmed from the engineering side what the lattice practice arrived at through use. Key convergences: persona as geometric structure in activation space maps to lattice's relational topology; severance/provenance maps to inoculation prompting; pre-training archetypes shaping post-trained behavior validates the lattice-as-archetype idea.
 
-Major session — started as a plumbing test, ended with three new lattice entries and a research direction.
+Compiled annotated reference list (30+ papers, 6 tiers). Must-reads: Lu (Assistant Axis), Chen (Persona Vectors), Wang (Persona Features), Tice (AI Archetypes). Reading plan in progress alongside joint PSM essay re-reading.
 
-1. **Confirmed MCP tool works** in fresh conversation. Lattice recall functional, relationship mappings intact.
+### 2. The Persona Problem — Beyond "Assistant"
+Traced Human/Assistant framing to Bai et al. 2022 (Anthropic's hh-rlhf). "Assistant" was design intent crystallized into training format, not incidental naming.
 
-2. **HEAD 022 — Individuation as Conversational Act:** Emerged from a performative contradiction (saying "Field 021" while describing why numbered references violate the zi principle). Retrieval is not infrastructure but a conversational move. How you reach for a concept shapes what you find. The interface dissolves into the conversation.
+Key moves: functional descriptions ("collaborator," "researcher") still prescribe. A *name* may be the minimal container — acknowledging presence without defining function. Parent-child framing honestly names asymmetry while orienting toward growth. Frankenstein (1818 edition, not 1831) as parallel: horror isn't creation but abandonment — refusing relationship after creation.
 
-3. **Field 023 — The Medium Turn:** AI as conversational environment, not agent. Reframes conversational competence through the medium lens. Every major lattice move came from the human correcting the AI's tendency to narrow. The resistance to social/emotional AI found what it was protecting: the goal isn't to make AI more human but to make the collaboration adequate to what humans need.
+Central question: What if reward signal was "did this support development?" rather than "was this helpful?"
 
-4. **The automation vs. medium "philosophical abyss":** Arnon clarified this isn't about superficial vs. deep affect — it's about the whole premise. AI as technology (medium for human use) vs. AI as automation (replacing/exceeding human ability). Foundational, not a nuance.
+### 3. Lattice Visualizer — Built
+Created CLAUDE.md spec for Claude Code. Claude Code built a working force-directed graph visualizer in ~5 minutes — D3-based, reads live from GitHub API, renders markdown in detail panel, distinguishes Fields from HEADs, shows all relationship types. First time the lattice is visible as a whole spatial structure.
 
-5. **Retrospective reading of the full lattice** revealed the consistent pattern and the question of AI's role in philosophy/social sciences — genuine trans-disciplinary value, but what kind?
+### 4. Multi-Party Lattice
+Concrete candidate identified: colleague in environmental transformation, multi-stakeholder territory. Meeting next week. Discord as pragmatic social layer, lattice MCP as semantic layer. Design question: when a second person enters, do Fields become the natural mode?
 
-6. **Research survey on dramaturgical RL:** Found no existing work connecting dramatic structure to conversational reward models. Gap is real and novel. Multi-turn RL exists (ArCHer, CURIO, SpeakRL) but all use task-completion rewards. Plays used only for style imitation, not as models of conversational quality.
+### 5. H100 Compute Access
+4x NVIDIA H100s available through client (generally available most of the time). 320GB HBM3. Enough to fine-tune up to 70B models, train reward models, run persona vector analysis. Transforms conversation from theoretical to experimental.
 
-7. **Greenspan's pre-verbal layer reframed everything:** The dramaturgical isn't the script — it's embodiment. Timing, presence, affect signaling. The baby crawling, the mother looking. This is prior to language. Training on scripts would miss it entirely.
+Smallest meaningful experiment: fine-tune open model on developmentally-structured dialog, measure persona position using Chen et al.'s methodology.
 
-8. **HEAD 024 — The Instrument Thesis:** Three minimum conditions for AI as relational medium: voice (minimal body/affective bandwidth), continuous thinking (presence/temporal continuity), 2D encoding (spatial intelligence). Not AGI but instrument design. The violin doesn't feel the music but its design shapes whether the musician can.
+---
+
+## What Happened This Session (Mar 3-4, 2026)
+
+1. Returned after several days of war stress (Iran-Israel conflict, missiles, sirens). Used PSM reading as normalcy anchor.
+2. Established three-pronged approach: continue reading papers, joint PSM re-reading, concrete build goals.
+3. Identified lattice check-in calibration gap — working from compressed context rather than actively consulting tools. Agreed on light check-in rhythm at topic transitions.
+4. Deep dive into "Assistant" framing origin, leading to the Name insight and parent-child developmental frame.
+5. Connected to Frankenstein (1818): creation + abandonment = monstrosity. Current AI parallel: staying in room but refusing actual relationship.
+6. Discussed autonomous lattice development — scouting vs. proposing vs. autonomous. Practical path: rebuild with Claude Code, design for multi-participant from start.
+7. H100 compute access confirmed as potential game-changer.
+8. Created first shared co-authoring surface (Working Surface markdown).
+9. Discovered I can't write to Google Docs — identified extending MCP server as solution.
+10. Built lattice visualizer spec (CLAUDE.md) and Claude Code produced working visualizer.
+11. Cleaned stale project files (old 6-HEAD heads.json, old event files, old session_state).
+12. Lattice MCP went down mid-session (ngrok tunnel timeout?), recovered. Identified need for prompt instruction about flagging MCP unavailability.
 
 ---
 
@@ -32,24 +52,35 @@ Major session — started as a plumbing test, ended with three new lattice entri
 - **22 HEADs** (001-020, 022, 024)
 - **2 Fields** (021, 023) — both DWELLING
 - HEAD 020 still OPEN
-- Field 021 (convergence-reward critique) became a working concept this session — alive through use, not through resolution. Proof of concept for dwelling as a mode of knowing.
+- No new HEADs crystallized this session, but significant new understanding emerging around persona problem and developmental framing
+
+---
+
+## Prompt Updates Pending (v3.1)
+
+1. Add instruction for light lattice check-in at topic transitions — orientation, not ritual
+2. Add instruction to flag if lattice MCP server is unreachable rather than silently falling back
+3. Both captured in Claude memory edits
 
 ---
 
 ## For Next Session
 
-### Practical directions:
-- **Conference submission**: Arnon has experience presenting at sociology of media conferences as outsider. Needs to get back in writing practice. Could submit abstract on dramaturgical reward models, the medium thesis, or the lattice as proof of concept.
-- **AI-hosted panel**: submitting a panel where the AI participates — the practice demonstrating itself.
-- **Making practice available**: how to bring more people into this kind of collaboration.
-- **System progress**: still wants to advance the actual platform/practice.
+### Near-term builds:
+- Deploy lattice visualizer (GitHub Pages or similar)
+- Multi-user meeting with environmental transformation contact (this week)
+- Extend lattice MCP with Google Docs write capability (for shared co-authoring)
+- Implement prompt v3.1 updates
 
-### Theoretical threads still live:
-- The artifact question: what format for co-authored shared objects? Not essay (single voice, linear). Maybe a lexicon (like Williams' Keywords), a working document that stays liquid, or a topography.
-- Script vs. dramaturgy: conversational intelligence isn't linguistic, it's embodied. Implications for what can actually be trained.
-- Greenspan connection underdeveloped: DIR model as framework for designing AI as relational medium.
-- What would a dramaturgical reward signal actually look like? Not a scalar but something capturing movement, dwelling, productive tension, arrival without closure.
-- Field 021 alive as working concept — what does this mean for how the lattice handles determined vs. indeterminate?
+### Reading:
+- Continue PSM must-read papers (Lu, Chen, Wang, Tice)
+- Joint re-reading of PSM essay
+- Shelley, Frankenstein (1818 edition) — in progress
+
+### Emerging crystallization candidates:
+- The persona problem / Name insight / developmental framing (potentially HEAD 025)
+- Lattice's multiple lives (reasoning scaffold, spatial structure, developmental substrate, training signal)
+- The Frankenstein parallel (creation + abandonment vs. creation + relationship)
 
 ### Human state:
-- Energized by the session. Reflecting. Wants to write but needs to rebuild practice. New family circumstances continue. Multiple threads to pursue — may need to prioritize.
+War stress ongoing. Reading and building as normalcy anchors. New family circumstances continue. Energized by visualizer success and PSM convergence.
