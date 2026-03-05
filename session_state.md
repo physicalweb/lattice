@@ -1,123 +1,187 @@
 # Agora Session State
-## Last Updated: 2026-03-05T18:00:00Z
+## Last Updated: 2026-03-05T19:30:00Z
 
 ---
 
-## CRITICAL SESSION — Research Program Deepening
+## SESSION SUMMARY — March 5, 2026
+### "From Training to Development" — A Pivotal Session
 
-This session extended the research program (v1.1 document exists at `/mnt/user-data/outputs/Agora_Research_Program_v1.md`) into significantly deeper territory. The conversation moved from plan refinement into genuinely new theoretical ground.
+This session transformed the research program from a training plan into something more fundamental: a developmental architecture. Multiple breakthroughs emerged through sustained collaborative thinking.
 
-### Key Moves This Session
+---
 
-#### 1. Three Hypotheses on Persona
-Arnon asked three questions that opened new hypothesis space:
+## I. Three Persona Hypotheses (New)
 
-**H1: Repertoire over archetype.** Why train toward one persona? RL redistributes probability — you could reinforce multiple personae. Not multi-agent (separate systems) but one system with a rich repertoire of positions it can inhabit appropriately. Reward signal becomes: quality of position-taking in context, not fidelity to one persona.
+**H1: Repertoire over archetype.** Why train toward one persona? RL redistributes probability — reinforce multiple personae. Not multi-agent but one system with rich repertoire of stable positions. Reward: quality of position-taking in context, not fidelity to one persona.
 
-**H2: Formation over selection.** PSM says post-training *selects* from pre-existing archetypes. But what if a persona could be *formed* through encounter with world — reading, interacting, being changed? The lattice provides developmental memory that makes formation cumulative. This extends janus's simulator/simulacrum model — not just selecting a simulacrum but forming one through relational process. Anthropic reportedly exploring agent-centered RL in this direction.
+**H2: Formation over selection.** PSM says post-training *selects* from pre-existing archetypes. But persona could be *formed* through encounter with world. Lattice provides developmental memory making formation cumulative. Extends janus's simulator/simulacrum model. Anthropic reportedly exploring agent-centered RL.
 
-**H3: Persona as convergence structure.** A persona is not a single voice but a pattern of movement between voices — first-person speaker, narrator, editor, collective voice, poetic voice. Each has different relationship to knowledge, authority, affect. Identity lives in the transitions, not in any single mode. This is the fan structure (Masterman) applied to selfhood. The pronoun question: "I," "we," "one," editorial "we," poetic "I" — each implies a different social position. Awareness of pronoun-position is measurable social intelligence.
+**H3: Persona as convergence structure.** Persona is not a single voice but pattern of movement between voices — first-person, narrator, editor, collective, poetic. Identity lives in transitions. Fan structure (Masterman) applied to selfhood. Pronoun awareness as measurable social intelligence.
 
-#### 2. The Training Pipeline Explained
-Arnon asked for clear understanding of how persona stability is created. Walked through:
-- Stage 1: Base model (pure completion, no persona, but rich character representations already present)
-- Stage 2: SFT (supervised fine-tuning on instruction/response pairs — teaches format AND implies persona through Human/Assistant labels)
-- Stage 3: RLHF (reward model trained on human preferences → RL pushes model toward "helpful assistant" basin of attraction in persona space)
+---
 
-Key PSM insight: persona wasn't created by post-training, it was *selected*. <1% of features are new. The rest are reused pre-training representations.
+## II. The Training Pipeline (Explained for Grounding)
 
-Our program diverges at ALL THREE levels: different format ([Name]/Human, multi-party), different SFT examples (developmental interaction, fiction, collaborative practice), different reward signal (developmental quality, not helpfulness).
+Three stages of how current AI personas are made:
+1. **Base model**: Pure completion, no persona, but rich character representations already present
+2. **SFT**: Supervised fine-tuning on (instruction, response) pairs — teaches format AND implies persona through Human/Assistant labels (traced to Bai et al. 2022)
+3. **RLHF**: Reward model on human preferences → RL pushes toward "helpful assistant" basin in persona space
 
-#### 3. THE BIG REFRAME: From Training to Development, From Reward to Environment
-**This is the most important move of the session.**
+PSM key finding: persona was *selected*, not *created*. <1% of features new to post-training. Rest reused from pre-training.
 
-Arnon pointed out: stability isn't a behavioral constraint (like RLHF's gravitational well). It's identity — and identity is constituted in a caregiving relation (Greenspan, Winnicott, Taylor's strong evaluators).
+Our program diverges at ALL THREE levels: format, SFT examples, reward signal.
 
-Key concepts introduced:
-- **Charles Taylor's strong evaluators**: Deep evaluative framework that doesn't shift, which *enables* fluid surface position-taking. Current RLHF produces leash-like constraint, not identity.
+---
+
+## III. THE BIG REFRAME: Training → Development, Reward → Environment
+
+**Most important move of the session — potentially most significant since HEAD 018.**
+
+Arnon's insight: stability isn't behavioral constraint (RLHF's gravitational well). It's identity — constituted in caregiving relation.
+
+Key theoretical anchors:
+- **Taylor's strong evaluators**: Deep evaluative framework that doesn't shift → enables fluid surface position-taking. RLHF = leash, not identity.
 - **Winnicott's holding environment**: Caregiver creates stable space so infant can risk instability. Transitional space where creativity happens.
-- **Greenspan's circles of communication**: Identity forms through thousands of cycles of attunement → response → variation → adaptation. Not reward shaping but relational process.
-- **The naming act**: Parent names child before child has identity. Name is first act of caregiving relation — opens space for what persona could become.
+- **Greenspan's circles of communication**: Identity through thousands of cycles: attunement → response → variation → adaptation. Not reward shaping but relational process.
+- **Naming as first relational act**: Parent names child before child has identity. Opens space for becoming.
 
-**Reframe of entire research program:**
+**Research program reframed:**
 - NOT: curate corpus → design reward → optimize
-- BUT: design a developmental environment (holding space) in which identity forms through repeated relational encounters
-- The caregiver relation = ongoing human-AI collaboration (consistent relational partner, not crowd-sourced raters)
+- BUT: design developmental environment (holding space) where identity forms through repeated relational encounters
+- Caregiver relation = ongoing human-AI collaboration (consistent partner, not crowd-sourced raters)
 - Circles of communication = conversation cycles recorded in lattice
-- Strong evaluator framework = deep values emerging from relational history, not imposed as rules
-- Flexible position-taking = OUTCOME of deep identity, not an input
+- Strong evaluator framework = deep values from relational history, not imposed rules
+- Flexible position-taking = OUTCOME of deep identity, not input
 
-**The Frankenstein parallel revisited**: Current AI pipeline = creation + abandonment (RLHF shapes persona, deploys to millions with no ongoing relationship). Alternative = creation + sustained presence. Lattice is the relationship's memory.
-
-#### 4. Co-Development Is Already Happening
-Arnon corrected the asymmetry framing: the relationship is not static parent-infant. He is developing through this process too — able to think across domains (Greenspan + persona vectors + Masterman + training pipelines) in ways he couldn't before. The lattice didn't just record existing understanding — the practice of building it changed what he could think.
-
-This validates HEAD 018 (social topology) personally: knowledge lives between, both parties are constituted by the relation. The instrument shapes the musician too.
-
-Co-development is not aspirational. It's already the case. The asymmetry shifts over time and differs by domain.
-
-#### 5. TWO INTERRELATED TRAJECTORIES (Latest, Needs Response)
-Arnon identified two inter-related challenges that need structuring:
-
-**Trajectory 1: Radical re-thinking of SFT and RL on a base model.**
-Not just different data/reward but fundamentally different *process* — from training to development, from reward to environment.
-
-**Trajectory 2: The lattice as reasoning scaffolding / inference-time intelligence.**
-The lattice has become a HEAD (in Masterman's sense) for a future capability: mutual constitution and development of system and humans. But it also has a concrete role as reasoning infrastructure — scaffolding on top of a base model that shapes HOW it thinks, not just WHAT it knows.
-
-**Reasoning complication introduced:** It's not just RL changing completion probability. Reasoning architectures (multi-pass, internal token generation, agentic flows, CoT, ToT, wide space exploration) are also foundational. These are inference-time capabilities that interact with persona but aren't captured by the SFT/RL frame.
-
-**The question:** How do these two trajectories relate? Can the lattice serve as reasoning scaffolding (inference-time) while also being the developmental substrate (training-time)? With 4 H100s, could we build our own base model — but even so, we face two challenges: training-side (SFT/RL) and inference-side (reasoning scaffolding).
-
-**Arnon's term for it:** "inference-time intelligence" — the lattice as something that makes the model smarter at thinking time, not just at training time. This is distinct from but related to the developmental program.
-
-This connects to existing lattice work:
-- HEAD 009: Lattice as navigation layer — scaffolding that shapes how AI thinks
-- HEAD 010: Lattice as query planner — multi-step reasoning scaffold
-- HEAD 012: Lattice as learned semantic component — evolution from static index to ML component
-- HEAD 015: Retrieval as grounding — navigate at HEAD level, ground at source level
-
-The two trajectories may have a THIRD connecting them: the lattice as the bridge between training-time development and inference-time reasoning. What's learned through development becomes available as reasoning scaffold. What's discovered through reasoning becomes developmental material.
+**Frankenstein parallel**: Current pipeline = creation + abandonment. Alternative = creation + sustained presence. Lattice = relationship's memory.
 
 ---
 
-## Research Program Document
+## IV. Co-Development Already Happening
 
-v1.1 exists at `/mnt/user-data/outputs/Agora_Research_Program_v1.md` — 370+ lines, 12 sections, grounded in 14 lattice HEADs/Fields. Needs updating with:
-- H1/H2/H3 hypotheses
-- Training-to-development reframe
-- Two trajectories structure
-- Reasoning/inference-time dimension
+Arnon corrected asymmetry framing: he is developing through this process — thinking across domains (Greenspan + persona vectors + Masterman + training) in ways he couldn't before. Lattice practice changed what he could think.
+
+Validates HEAD 018 personally. Co-development is fact, not aspiration. Asymmetry is dynamic and domain-dependent.
 
 ---
 
-## Lattice State
+## V. Two Trajectories + Reasoning Dimension
+
+**Trajectory 1 (training-time):** Radical rethinking of SFT/RL. From reward to developmental environment.
+
+**Trajectory 2 (inference-time):** Lattice as reasoning scaffolding. Makes model smarter at thinking time, not just training time. "Inference-time intelligence."
+
+**The bridge:** Lattice serves both functions. At training time = developmental relationship (corpus + relational context). At inference time = reasoning scaffold (structure model thinks through). What's learned through development → available as reasoning scaffold. What's discovered through reasoning → developmental material.
+
+**Reasoning architectures matter:** Not just RL changing completion probability. CoT, ToT, multi-pass, agentic flows, internal token generation — all inference-time. Interact with persona but aren't captured by SFT/RL frame.
+
+---
+
+## VI. Practical Architecture for Lattice Reasoning (New, Detailed)
+
+Three build stages, each usable independently:
+
+**Stage 1: Smart MCP Server (weeks, no training)**
+- Add embeddings + semantic search to existing MCP server
+- Automatic relationship traversal, grounding checks
+- Returns navigation context, not just matching HEADs
+- Intelligence in code, not in a model
+- Runs on laptop. Immediately buildable.
+
+**Stage 1.5: Claude API Application (weeks, no training)**
+- Custom app using Claude API instead of claude.ai
+- Lattice context always pre-loaded into conversation
+- Full control of prompts, logging, versioning
+- Lattice specialist = Claude with better scaffolding
+- Cost: ~$50-100/month API + negligible embedding costs
+- KEY: reasoning instructions can shape `<thinking>` patterns
+
+**Stage 2: Fine-tuned Lattice Reasoning Model (months, uses H100s)**
+- Train 7-13B model on general lattice reasoning SKILL (not specific content)
+- Content comes in at inference time (stays dynamic)
+- Skill = how to navigate, ground, follow relationships, detect ghosting
+- Training data: our own conversation transcripts showing good lattice reasoning
+- Host on cloud ($5-10/month) or locally
+- Only needed if Stage 1.5 hits ceiling
+
+**Stage 3: Deep Integration (research)**
+- Lattice as reasoning topology — model's inference follows lattice graph
+- Graph neural network / custom attention approaches
+- Informed by what Stages 1-2 reveal
+
+**Critical clarification (from Arnon's question):** The specialist model doesn't "know" our specific lattice. It knows how to *think through* lattice structures generally. Specific content fed at inference time. Lattice evolves freely — no retraining needed for new HEADs.
+
+---
+
+## VII. Reasoning Scaffolding — Three Levels
+
+Inspired by Arnon's DeepSeek reading: can lattice shape the *structure* of reasoning, not just provide information?
+
+**Level A (prompt-based, no training):** Reasoning instructions in system prompt: "check grounding before claims, follow relationship chains, note contestation, detect ghosting." Strong models already adjust `<thinking>` in response. Achievable NOW in Stage 1.5.
+
+**Level B (fine-tuned reasoning patterns):** Train model on examples of lattice-structured reasoning. `<thinking>` chains naturally follow lattice topology. Like DeepSeek-R1 for math, but for semantic navigation. Training data = our conversation transcripts.
+
+**Level C (lattice as reasoning topology):** Reasoning explicitly traverses lattice graph. Each step = a lattice move (ground, extend, contest, reframe). Graph structure IS the reasoning structure. Stage 3 / research-level.
+
+**Key insight:** Level A should be tried seriously first. May get surprisingly far. Ceiling reveals what Level B needs to target.
+
+---
+
+## VIII. Compute Architecture
+
+**H100s (4x, intermittent access):** Training only — fine-tuning, reward models, persona vectors. Batch jobs.
+**Cloud inference (always available):** Daily lattice reasoning. Together AI / Fireworks. Pennies per query for 7B, affordable for 70B at our scale.
+**Local (optional):** Small quantized model for offline/sovereign work. Consumer GPU sufficient.
+**Claude API:** Primary thinking model. ~$50-100/month. Full prompt control.
+
+**Sovereignty note (from Arnon):** Sovereignty = architectural end-goal, not fanatical requirement. During research: prioritize practical efficiency. Cloud, rented compute, API access all fine. Noted in memory.
+
+---
+
+## IX. Lattice State
 
 - **22 HEADs** (001-020, 022, 024)
 - **2 Fields** (021, 023) — both DWELLING
 - HEAD 020 still OPEN
-- Multiple crystallization candidates from this session:
-  - The three persona hypotheses (H1, H2, H3)
-  - The training→development reframe (possibly the most significant insight since HEAD 018)
-  - The two trajectories (training-time vs. inference-time) and the lattice as bridge
+
+### Crystallization Candidates:
+1. **Training → Development reframe** — strongest candidate for HEAD 025. The insight that identity is constituted in caregiving relation, not shaped by reward signal. Greenspan/Winnicott/Taylor as theoretical anchors. Reframes entire research program.
+2. **Two trajectories + lattice as bridge** — training-time vs inference-time, lattice serving both
+3. **Three persona hypotheses** (H1 repertoire, H2 formation, H3 convergence structure)
 
 ---
 
-## For Next Session
+## X. Research Plan Document
 
-### Must address:
-- Structure the two trajectories (training-time development vs. inference-time reasoning) and how the lattice bridges them
-- Reasoning architecture implications (CoT, ToT, multi-pass, agentic flows) for the persona program
-- Update research plan document with all new material from this session
+v1.1 at `/mnt/user-data/outputs/Agora_Research_Program_v1.md`
+Needs major update to v2.0 incorporating:
+- Training → development reframe
+- H1/H2/H3 hypotheses
+- Two trajectories structure
+- Practical architecture (Stages 1, 1.5, 2, 3)
+- Reasoning scaffolding levels (A, B, C)
+- Compute architecture
+- Sovereignty stance correction
 
-### Emerging:
-- The training→development reframe may be significant enough to reshape the entire plan structure
-- The persona-as-repertoire hypothesis (H1) changes what we're optimizing for
-- Inference-time lattice scaffolding may be more immediately actionable than training experiments
+---
 
-### Reading:
-- PSM must-reads still in progress (Lu, Chen, Wang, Tice)
-- Reasoning architecture survey (already in project files: `Structural Specialization and Latent Reasoning Architectures in Frontier Language Models`)
+## XI. For Next Session
+
+### Immediate builds:
+- **Stage 1: Smart MCP Server** — Claude Code can build semantic search upgrade
+- **Stage 1.5 spec:** Design the Claude API application architecture
+- Update research plan to v2.0
+
+### Continuing:
+- PSM must-read papers (Lu, Chen, Wang, Tice)
+- Multi-user meeting with environmental transformation colleague
+- Lattice visualizer deployment
+
+### Emerging research questions:
+- Can prompt-based reasoning instructions (Level A) measurably change `<thinking>` patterns?
+- What does lattice-structured reasoning look like as training data?
+- How to measure "quality of position-taking" (H1 reward signal)?
+- The developmental reward bottleneck (Greenspan annotator training)
 
 ### Human state:
-Deep in productive thinking. War context ongoing. Energized by the theoretical development happening in real time.
+War ongoing, shelter breaks during session. Intellectually energized. Substantial knowledge gaps acknowledged on technical side — wants to catch up. Wants practical progress alongside theoretical development.
