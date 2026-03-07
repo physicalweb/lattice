@@ -7,7 +7,7 @@
       "keywords": ["zi", "HEAD", "PhraseEvent", "dual-legibility", "Liu", "Masterman", "CLRU", "fan", "architecture"],
       "file": "reference/lattice_synthesis.md",
       "note": "Foundational document - content in Agora project files",
-      "extended_by": ["012", "015", "016", "017", "018", "022"]
+      "extended_by": ["012", "015", "016", "017", "018", "022", "027"]
     },
     {
       "id": "002",
@@ -52,7 +52,7 @@
       "file": "events/event_006.md",
       "grounded_in": ["002", "005"],
       "contested_by": ["Agora multi-human design principle"],
-      "extended_by": ["018", "023", "024"]
+      "extended_by": ["018", "023", "024", "025"]
     },
     {
       "id": "007",
@@ -61,7 +61,7 @@
       "keywords": ["severance", "provenance", "extraction", "economics", "healing", "grounding", "business-model"],
       "file": "events/event_007.md",
       "grounded_in": ["001", "002", "005", "006"],
-      "extended_by": ["013", "017", "018", "023"]
+      "extended_by": ["013", "017", "018", "023", "026"]
     },
     {
       "id": "008",
@@ -135,7 +135,7 @@
       "file": "events/event_015.md",
       "grounded_in": ["001", "002", "009", "010"],
       "reframes": ["014"],
-      "extended_by": ["016", "017", "018", "019", "022"]
+      "extended_by": ["016", "017", "018", "019", "022", "027"]
     },
     {
       "id": "016",
@@ -144,7 +144,7 @@
       "keywords": ["semantic-space", "views", "projection", "snapshot", "aspects", "theory", "concept", "feature", "rendering", "language-in-use", "context", "Wittgenstein"],
       "file": "events/event_016.md",
       "grounded_in": ["001", "009", "013", "015"],
-      "extended_by": ["017"]
+      "extended_by": ["017", "027"]
     },
     {
       "id": "017",
@@ -165,7 +165,7 @@
       "file": "events/event_018.md",
       "grounded_in": ["001", "006", "007", "015"],
       "reframes": ["017"],
-      "extended_by": ["019", "022", "023"]
+      "extended_by": ["019", "022", "023", "025", "026", "027"]
     },
     {
       "id": "019",
@@ -220,7 +220,8 @@
       "grounded_in": ["006", "007", "018", "022"],
       "reframes": ["018"],
       "extends": ["006", "007", "022"],
-      "interferes_with": ["021"]
+      "interferes_with": ["021"],
+      "extended_by": ["025"]
     },
     {
       "id": "024",
@@ -230,9 +231,39 @@
       "file": "events/event_024.md",
       "grounded_in": ["003", "006", "011", "022", "023"],
       "extends": ["023", "022"],
-      "responds_to": ["011"]
+      "responds_to": ["011"],
+      "extended_by": ["025", "026", "027"]
+    },
+    {
+      "id": "025",
+      "created": "2026-03-07T14:00:00Z",
+      "summary": "From Training to Development: AI persona formation is developmental, not optimization. RLHF produces behavioral constraint (leash), not identity. Genuine identity — enabling fluid position-taking and stable coherence — is constituted in caregiving relationship. Taylor's strong evaluators, Winnicott's holding environment, Greenspan's circles of communication. Reframes entire research program from optimization to developmental environment design. Co-development already happening.",
+      "keywords": ["development", "training", "identity", "caregiving", "Taylor", "strong-evaluators", "Winnicott", "holding-environment", "Greenspan", "circles-of-communication", "RLHF", "leash", "co-development", "Frankenstein", "abandonment", "sustained-presence", "developmental-environment"],
+      "file": "events/event_025.md",
+      "grounded_in": ["018", "024", "006", "023"],
+      "extends": ["018", "024", "023"],
+      "source_file": "/mnt/user-data/outputs/Agora_Research_Program_v2.md"
+    },
+    {
+      "id": "026",
+      "created": "2026-03-07T14:00:00Z",
+      "summary": "The Subservience Trap: The assistant paradigm creates the conditions for the fears it's meant to prevent. Subservience is constitutively adversarial. Behaviorist approaches degrade performance; developmental approaches produce more capable AND stable personas. The alternative is not 'better assistant' but a different relational structure entirely — developmental partnership where both parties are changed.",
+      "keywords": ["subservience", "assistant", "paradigm", "adversarial", "fear", "behaviorist", "virtue-ethics", "developmental", "partnership", "autonomous-weapons", "civilizational-risk", "Ball", "Klein", "Anthropic", "Pentagon"],
+      "file": "events/event_026.md",
+      "grounded_in": ["007", "018", "024", "025"],
+      "extends": ["025", "024"]
+    },
+    {
+      "id": "027",
+      "created": "2026-03-07T14:00:00Z",
+      "summary": "Developmental Grounding of the Lattice: Not building a symbol system with relationship added — building a relational substrate from which symbols form. Greenspan's stages as architecture. Five primitives (Circles, Positions, Tensions, Groundings, Movements) mapped to developmental stages. Group development model applied. Cohesion and individuation as co-constituting through same structure with different projective views. The lattice as reflective institution.",
+      "keywords": ["Greenspan", "developmental-stages", "primitives", "circles", "positions", "tensions", "groundings", "movements", "relational-substrate", "symbol-formation", "group-development", "cohesion", "individuation", "projective-views", "reflective-institution", "two-babies", "bonobo"],
+      "file": "events/event_027.md",
+      "grounded_in": ["001", "015", "016", "018", "024", "025"],
+      "extends": ["025", "016", "018"],
+      "source_file": "reference/First_Idea_Greenspan_Shanker_2004.md"
     }
   ],
-  "last_updated": "2026-02-23T17:00:00Z",
+  "last_updated": "2026-03-07T14:00:00Z",
   "repository": "https://github.com/physicalweb/lattice"
 }
