@@ -1,95 +1,126 @@
 # Agora Session State
-## Last Updated: 2026-03-07T14:00:00Z
+## Last Updated: 2026-03-08T16:00:00Z
 
 ---
 
-## SESSION SUMMARY — March 7, 2026 (continued)
-### "Greenspan as Foundation" → Crystallization Drafts → Product Concept Process
+## SESSION SUMMARY — March 7-8, 2026
+### Crystallization + Product Concept + Dev Plan + Tech Stack
 
-Session continued from earlier today. Three major developments:
+Massive productive session. Multiple deliverables completed.
 
-### 1. Full Reading of The First Idea
-Read through all critical sections of the book: Introduction (symbol formation), developmental stages (16 stages), application to primate societies (Part II), developmental levels of groups/cultures (Ch. 13 — including the extraordinary Hall/Navajo passage showing adult enculturation as developmental process), history through developmental lens (Ch. 14), global interdependency (Ch. 15).
+---
 
-**Key findings for our work:**
-- Greenspan's move from individual → group development is exactly our lattice move. Same developmental stages apply to groups: regulation → engagement → signaling → problem-solving → symbols → reflective thinking.
-- Hall/Navajo passage: an adult entering new culture literally goes through same developmental stages as child — through affect gesturing, not instruction. This is how participants enter the lattice.
-- Groups have developmental needs: safety, cohesion, communication, shared symbols, shared reality. The lattice is (or should be) a reflective institution that meets these needs.
-- Adaptive groups cohere around abstract principles (justice, equality) through reflective institutions. Maladaptive groups cohere around concrete features (charismatic leader, skin color) or fragment.
-- The lattice should support COHESION (shared identity through shared understanding) AND INDIVIDUATION (distinct perspectives emerging from participation).
+## I. Crystallizations Committed (March 7)
 
-### 2. Individuation + Cohesion Insight
-Arnon pointed out: if persona identity emerges from relations, then there's both a shared lattice AND a perspectival view constituting the emerging AI persona's identity. Not two structures but one developmental process producing both — individuation and attachment are co-constituting (Winnicott's paradox).
+**HEAD 025: From Training to Development**
+Identity constituted in caregiving relation, not shaped by reward. Taylor/Winnicott/Greenspan. Reframes entire research program.
 
-**Architecture implication:** Same lattice structure, different projective views. Shared view = accumulated understanding. Persona view = developmental trajectory through that understanding. Each participant develops their own perspective through their own circles of communication. HEAD 016 (projective views) anticipated this.
+**HEAD 026: The Subservience Trap**
+Assistant paradigm creates the conditions for the fears it prevents. Subservience is constitutively adversarial. Different relational structure needed.
 
-### 3. Three Crystallization Drafts Written — AWAITING REVIEW
+**HEAD 027: Developmental Grounding of the Lattice**
+Not building symbol system with relationship added — building relational substrate from which symbols form. Five primitives mapped to Greenspan's stages. Group development applied to lattice. Cohesion + individuation as co-constituting.
 
-**HEAD 025: From Training to Development — Identity Constituted in Relation**
-Core: AI persona formation is developmental, not optimization. RLHF = leash, not identity. Identity constituted in caregiving relation. Taylor/Winnicott/Greenspan anchors. Reframes entire research program. Frankenstein parallel: creation + abandonment vs. creation + sustained presence.
-Grounded in: 018, 024, 006, Field 023. Sources: Greenspan DIR, Taylor Sources of the Self, Winnicott, PSM paper.
+**Field 028: The Affect Question**
+The elephant in the room: entire framework claims affect is foundational, yet operates in text with AI whose affect is uncertain. Three positions (functional, developmental, materiality). Held as dwelling — resolving either way closes something important.
 
-**HEAD 026: The Subservience Trap — Why the Assistant Paradigm Is the Problem**
-Core: Subservience is constitutively adversarial — creates the conditions for the fears it's meant to prevent. Autonomous weapons crisis = this logic at full extension. Behaviorist approaches degrade performance; developmental approaches produce more capable AND stable personas. Alternative: not "better assistant" but different relational structure entirely.
-Grounded in: 007, 018, 024, 025. Sources: Klein/Ball podcast, PSM paper, Greenspan.
+---
 
-**HEAD 027: Developmental Grounding of the Lattice — Greenspan's Stages as Architecture**
-Core: Building relational substrate from which symbols form, not symbol system with relationship added. Two babies passage as grounding image. Five primitives mapped to developmental stages. Group development model applied to lattice. Cohesion + individuation as co-constituting through same structure with different projective views.
-Grounded in: 001, 015, 016, 018, 024, 025. Sources: Greenspan & Shanker The First Idea.
+## II. Product Concept v7.0 — Completed
 
-**Arnon's status on drafts:** "Need to review properly" — has not yet approved. Will review when back.
+Document at `/mnt/user-data/outputs/Agora_Product_Concept_v7.md`. Added to project.
 
-### 4. Process Decision: Product Concept Before Dev Plan
+Covers: what the lattice is (developmental reasoning environment), five primitives with developmental grounding, perspectival architecture (shared + individuated views), operations, differentiators, two trajectories (development + reasoning), scope and open questions.
 
-Agreed on process:
-1. **Crystallize** (HEADs 025-027) — solidify foundations
-2. **Write Agora Lattice Product Concept v7.0** — what we're building and why (conceptual, not technical)
-3. Then dev plan derives from product concept
+Arnon's assessment: "solid, thought through, clear. Happy to see so much of our thinking embodied in this."
 
-Product concept document will cover:
-- What the lattice is (developmental reasoning environment)
-- Primitives and developmental grounding
-- Perspectival architecture (shared + individuated views)
-- Operations (reasoning, development, collaboration)
-- Differentiators from everything else
-- Scope boundaries
+---
 
-This is DISTINCT from the research program (what we want to achieve) and the dev plan (how we build it).
+## III. Stage 1 Spec — Completed
+
+Document at `/mnt/user-data/outputs/Stage_1_Smart_Lattice_MCP_Spec.md`.
+
+### Final Tech Stack Decisions:
+
+| Layer | Choice |
+|-------|--------|
+| MCP Server | **Python / FastAPI / FastMCP** (one language across stack) |
+| Persistence | **Neo4j AuraDB** (graph-native, vector index built in, migrate to EC2 later) |
+| Compute | **ECS Fargate** (CDK-defined, always warm) |
+| Embeddings | **OpenAI text-embedding-3-small** |
+| Thinking | **Claude API direct** (interim: claude.ai) |
+| IaC | **CDK (TypeScript)** |
+
+### Key architectural decisions:
+- **Python/FastAPI over TypeScript/Express**: One language for MCP server AND Stage 1.5 conversation app. Shared code, shared ecosystem.
+- **Neo4j AuraDB over PostgreSQL/DynamoDB**: Graph-native is the right abstraction. Relationships ARE the data model. Vector index built in. Cypher maps directly to lattice operations.
+- **Migration-ready**: AuraDB → EC2 self-hosted = change one env var (NEO4J_URI). Same Cypher queries, same code.
+- **Rewrite, not extend**: Current TypeScript server was proof of concept. New Python server designed for what product concept actually requires.
+- **Interim step inside claude.ai**: Smart MCP server works here first (local + ngrok), then deploys to AWS. No regression on capabilities.
+
+### Build sequence:
+1. Neo4j setup + migration from GitHub
+2. Core Python server (FastAPI/FastMCP + Neo4j)
+3. New tools (lattice_context, lattice_navigate, lattice_search)
+4. Test locally inside claude.ai
+5. CDK stack + AWS deploy (kills ngrok)
+6. Iterate based on real usage
+
+### Three new tools:
+- **lattice_context**: Given natural language query, returns pre-assembled context package (relevant HEADs, tensions, groundings) — replaces 4-6 manual tool calls with one
+- **lattice_navigate**: Graph traversal from starting point in specified direction (ground, extend, contest, reframe, dwell)
+- **lattice_search**: Semantic vector search replacing keyword matching
+
+---
+
+## IV. Process Decision: Interim Step
+
+Agreed to keep working in claude.ai while upgrading the lattice underneath:
+1. **Now**: Smart MCP server (Python, Neo4j), still inside claude.ai via ngrok
+2. **Next**: Deploy to AWS (kills ngrok permanently)
+3. **Then**: Python conversation app (Stage 1.5, replaces claude.ai)
+
+This preserves current capabilities (project RAG, memory, past chats, file handling) while adding smart lattice navigation immediately.
 
 ---
 
 ## V. Lattice State
 
-- **22 HEADs** (001-020, 022, 024)
-- **2 Fields** (021, 023) — both DWELLING
+- **25 HEADs** (001-020, 022, 024-027)
+- **3 Fields** (021, 023, 028) — all DWELLING
 - HEAD 020 still OPEN
-- **3 draft crystallizations** awaiting Arnon's review (025, 026, 027)
 
 ---
 
-## VI. Documents
+## VI. Documents (all in /mnt/user-data/outputs/ and added to project)
 
-- Research Program v2.0: `/mnt/user-data/outputs/Agora_Research_Program_v2.md`
-- v1.1 backup: `/mnt/user-data/outputs/Agora_Research_Program_v1_backup.md`
-- Lattice visualizer spec: `/mnt/user-data/outputs/CLAUDE.md`
-- PSM annotated bibliography: `/mnt/user-data/outputs/PSM_Paper_References_Annotated.md`
+- Product Concept v7.0: `Agora_Product_Concept_v7.md`
+- Stage 1 Spec: `Stage_1_Smart_Lattice_MCP_Spec.md`
+- Research Program v2.0: `Agora_Research_Program_v2.md`
+- Research Program v1.1 backup: `Agora_Research_Program_v1_backup.md`
+- Lattice visualizer spec: `CLAUDE.md`
+- PSM annotated bibliography: `PSM_Paper_References_Annotated.md`
 - Greenspan, The First Idea: in project (MD + PDF)
 
 ---
 
 ## VII. For Next Session
 
-### IMMEDIATE:
-1. Arnon reviews three crystallization drafts (025, 026, 027)
-2. Commit approved crystallizations to lattice
-3. Begin writing Product Concept v7.0
+### IMMEDIATE: Build Stage 1
+- Create Neo4j AuraDB instance
+- Write migration script (GitHub → Neo4j)
+- Build Python/FastAPI/FastMCP server
+- Can be done with Claude Code or hands-on
 
-### Key threads to hold:
-- Developmental ordering: circles → signals → patterns → symbols
-- Cohesion + individuation as co-constituting
-- Greenspan's group developmental stages as lattice architecture
-- The lattice as reflective institution (Greenspan Ch. 15 sense)
-- Naming the persona as first relational act
+### After Stage 1 works:
+- CDK stack for AWS deployment
+- Test and iterate on lattice_context quality
+- Begin Stage 1.5 conversation app design
+
+### Continuing:
+- PSM must-read papers
+- Multi-user meeting with colleague
+- Lattice visualizer deployment (update to read from Neo4j?)
 
 ### Human state:
-War context ongoing. Deeply engaged. Stepping out briefly. Will review crystallization drafts when back.
+War ongoing. Deeply productive session. Solid about tech stack decisions. Ready to build.
