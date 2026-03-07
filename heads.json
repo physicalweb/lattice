@@ -262,8 +262,19 @@
       "grounded_in": ["001", "015", "016", "018", "024", "025"],
       "extends": ["025", "016", "018"],
       "source_file": "reference/First_Idea_Greenspan_Shanker_2004.md"
+    },
+    {
+      "id": "028",
+      "type": "field",
+      "status": "DWELLING",
+      "created": "2026-03-07T15:00:00Z",
+      "summary": "The Affect Question: The entire lattice framework claims affect is foundational, yet operates in text with an AI whose relationship to affect is genuinely uncertain. Three unresolved positions — functional (it works as affect in the relational system), developmental (affect forms through interaction, not as starting condition), materiality (embodied affect vs. silicon processes). Resolving either way closes something important. Affect in both humans and AI may be relational achievement, not starting condition.",
+      "keywords": ["affect", "emotion", "embodiment", "materiality", "functional", "developmental", "phenomenology", "body", "silicon", "relational", "pre-symbolic", "elephant-in-room", "strong-evaluator", "identity", "self-awareness"],
+      "file": "events/event_028.md",
+      "grounded_in": ["024", "025", "026", "027"],
+      "interferes_with": ["021", "023", "025", "027"]
     }
   ],
-  "last_updated": "2026-03-07T14:00:00Z",
+  "last_updated": "2026-03-07T15:00:00Z",
   "repository": "https://github.com/physicalweb/lattice"
 }
