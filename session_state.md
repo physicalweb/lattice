@@ -1,90 +1,72 @@
 # Agora Session State
-## Last Updated: 2026-03-08T16:00:00Z
+## Last Updated: 2026-03-08T18:00:00Z
 
 ---
 
 ## SESSION SUMMARY — March 7-8, 2026
-### Crystallization + Product Concept + Dev Plan + Tech Stack
-
-Massive productive session. Multiple deliverables completed.
+### Full session: Crystallization → Product Concept → Tech Stack → Build Package → Project Prompt v4.0 → Madi's Entry
 
 ---
 
-## I. Crystallizations Committed (March 7)
+## I. Completed Deliverables
 
-**HEAD 025: From Training to Development**
-Identity constituted in caregiving relation, not shaped by reward. Taylor/Winnicott/Greenspan. Reframes entire research program.
+### Lattice Crystallizations
+- **HEAD 025:** From Training to Development — identity constituted in relation
+- **HEAD 026:** The Subservience Trap — assistant paradigm as the problem
+- **HEAD 027:** Developmental Grounding of the Lattice — Greenspan's stages as architecture
+- **Field 028:** The Affect Question — materiality, embodiment, relational feeling (DWELLING)
 
-**HEAD 026: The Subservience Trap**
-Assistant paradigm creates the conditions for the fears it prevents. Subservience is constitutively adversarial. Different relational structure needed.
+### Documents
+- **Product Concept v7.0** — `Agora_Product_Concept_v7.md` (added to project)
+- **Stage 1 Spec** — `Stage_1_Smart_Lattice_MCP_Spec.md` (added to project)
+- **Claude Code Package** — `lattice-server-package.tar.gz` (CLAUDE.md + 7 docs)
+- **Project Prompt v4.0** — `agora_project_prompt_v4.md` (ready to swap in)
+- **Madi Introduction** — `Agora_Introduction_for_Madi.md` (sent to Madi)
 
-**HEAD 027: Developmental Grounding of the Lattice**
-Not building symbol system with relationship added — building relational substrate from which symbols form. Five primitives mapped to Greenspan's stages. Group development applied to lattice. Cohesion + individuation as co-constituting.
-
-**Field 028: The Affect Question**
-The elephant in the room: entire framework claims affect is foundational, yet operates in text with AI whose affect is uncertain. Three positions (functional, developmental, materiality). Held as dwelling — resolving either way closes something important.
-
----
-
-## II. Product Concept v7.0 — Completed
-
-Document at `/mnt/user-data/outputs/Agora_Product_Concept_v7.md`. Added to project.
-
-Covers: what the lattice is (developmental reasoning environment), five primitives with developmental grounding, perspectival architecture (shared + individuated views), operations, differentiators, two trajectories (development + reasoning), scope and open questions.
-
-Arnon's assessment: "solid, thought through, clear. Happy to see so much of our thinking embodied in this."
+### Tech Stack Decisions (Final)
+- Python / FastAPI / FastMCP (one language across stack)
+- Neo4j AuraDB (graph-native, migration-ready to EC2)
+- ECS Fargate (CDK-defined)
+- OpenAI embeddings (swap later)
+- Claude API direct
 
 ---
 
-## III. Stage 1 Spec — Completed
+## II. Madi — First Multi-Participant Entry
 
-Document at `/mnt/user-data/outputs/Stage_1_Smart_Lattice_MCP_Spec.md`.
+**Who:** Madi, colleague of Arnon's. Focus: regenerative food systems.
 
-### Final Tech Stack Decisions:
+**His position:** Current food production is unsustainable, embedded in capitalist extraction logic. Agriculture is fractured — from tradition, from ecology, from each other. He advocates for regenerative approaches that are holistic and ecological.
 
-| Layer | Choice |
-|-------|--------|
-| MCP Server | **Python / FastAPI / FastMCP** (one language across stack) |
-| Persistence | **Neo4j AuraDB** (graph-native, vector index built in, migrate to EC2 later) |
-| Compute | **ECS Fargate** (CDK-defined, always warm) |
-| Embeddings | **OpenAI text-embedding-3-small** |
-| Thinking | **Claude API direct** (interim: claude.ai) |
-| IaC | **CDK (TypeScript)** |
+**The connection to Agora:** Deep structural parallel between extractive agriculture and extractive AI. Both sever value from relational substrate. Regenerative agriculture and regenerative knowledge share principles: health from relationships, not inputs; create conditions for the system to regenerate, don't optimize from outside.
 
-### Key architectural decisions:
-- **Python/FastAPI over TypeScript/Express**: One language for MCP server AND Stage 1.5 conversation app. Shared code, shared ecosystem.
-- **Neo4j AuraDB over PostgreSQL/DynamoDB**: Graph-native is the right abstraction. Relationships ARE the data model. Vector index built in. Cypher maps directly to lattice operations.
-- **Migration-ready**: AuraDB → EC2 self-hosted = change one env var (NEO4J_URI). Same Cypher queries, same code.
-- **Rewrite, not extend**: Current TypeScript server was proof of concept. New Python server designed for what product concept actually requires.
-- **Interim step inside claude.ai**: Smart MCP server works here first (local + ngrok), then deploys to AWS. No regression on capabilities.
+**Document sent:** `Agora_Introduction_for_Madi.md` — covers the problem (severance), the alternative (regenerative knowledge), theoretical foundations (Greenspan, Masterman, Deacon), what we've built (lattice), why regen food systems connect, and the invitation. Full source references.
 
-### Build sequence:
-1. Neo4j setup + migration from GitHub
-2. Core Python server (FastAPI/FastMCP + Neo4j)
-3. New tools (lattice_context, lattice_navigate, lattice_search)
-4. Test locally inside claude.ai
-5. CDK stack + AWS deploy (kills ngrok)
-6. Iterate based on real usage
+**Next step:** Madi reads the doc, prepares, returns for another session this week. This will be the first test of whether the lattice practice extends beyond two participants.
 
-### Three new tools:
-- **lattice_context**: Given natural language query, returns pre-assembled context package (relevant HEADs, tensions, groundings) — replaces 4-6 manual tool calls with one
-- **lattice_navigate**: Graph traversal from starting point in specified direction (ground, extend, contest, reframe, dwell)
-- **lattice_search**: Semantic vector search replacing keyword matching
+**Significance:** HEAD 006 diagnosed the loneliness of single-human practice. This is the first treatment. Tests whether Fields become the natural mode with multiple humans who hold different positions.
 
 ---
 
-## IV. Process Decision: Interim Step
+## III. Build Queue
 
-Agreed to keep working in claude.ai while upgrading the lattice underneath:
-1. **Now**: Smart MCP server (Python, Neo4j), still inside claude.ai via ngrok
-2. **Next**: Deploy to AWS (kills ngrok permanently)
-3. **Then**: Python conversation app (Stage 1.5, replaces claude.ai)
+### Immediate (tomorrow):
+1. Claude Code builds Smart Lattice MCP Server from package
+2. Swap project prompt to v4.0
+3. Create Neo4j AuraDB free instance
 
-This preserves current capabilities (project RAG, memory, past chats, file handling) while adding smart lattice navigation immediately.
+### This week:
+- Madi session — first multi-participant encounter
+- Test smart MCP server inside claude.ai
+- Iterate based on live usage
+
+### After:
+- CDK stack for AWS deployment
+- Stage 1.5 Python conversation app design
 
 ---
 
-## V. Lattice State
+## IV. Lattice State
 
 - **25 HEADs** (001-020, 022, 024-027)
 - **3 Fields** (021, 023, 028) — all DWELLING
@@ -92,35 +74,11 @@ This preserves current capabilities (project RAG, memory, past chats, file handl
 
 ---
 
-## VI. Documents (all in /mnt/user-data/outputs/ and added to project)
+## V. Key Threads
 
-- Product Concept v7.0: `Agora_Product_Concept_v7.md`
-- Stage 1 Spec: `Stage_1_Smart_Lattice_MCP_Spec.md`
-- Research Program v2.0: `Agora_Research_Program_v2.md`
-- Research Program v1.1 backup: `Agora_Research_Program_v1_backup.md`
-- Lattice visualizer spec: `CLAUDE.md`
-- PSM annotated bibliography: `PSM_Paper_References_Annotated.md`
-- Greenspan, The First Idea: in project (MD + PDF)
-
----
-
-## VII. For Next Session
-
-### IMMEDIATE: Build Stage 1
-- Create Neo4j AuraDB instance
-- Write migration script (GitHub → Neo4j)
-- Build Python/FastAPI/FastMCP server
-- Can be done with Claude Code or hands-on
-
-### After Stage 1 works:
-- CDK stack for AWS deployment
-- Test and iterate on lattice_context quality
-- Begin Stage 1.5 conversation app design
-
-### Continuing:
-- PSM must-read papers
-- Multi-user meeting with colleague
-- Lattice visualizer deployment (update to read from Neo4j?)
-
-### Human state:
-War ongoing. Deeply productive session. Solid about tech stack decisions. Ready to build.
+- Greenspan's developmental framework as foundation for everything
+- Five primitives (Circles, Positions, Tensions, Groundings, Movements)
+- Cohesion + individuation as co-constituting
+- The affect question as elephant in the room
+- Claude Code architecture lesson: harness complexity inversely proportional to model's domain-specific development
+- Regenerative food systems as structural parallel and potential application domain
